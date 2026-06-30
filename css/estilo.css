@@ -1228,6 +1228,7 @@ hr {
 }
 
 .fueraMenor {
+    display: none;
     z-index: 999999999999999999999999999;
     position: absolute;
     margin: 0;
@@ -1829,7 +1830,7 @@ hr {
     }
 
     .trabajos {
-        margin-bottom: 25%;
+        margin-bottom: 40%;
     }
 
 
@@ -1876,7 +1877,7 @@ hr {
     }
 }
 
-@media all and (max-width: 900px) {
+@media all and (min-width: 641px) and (max-width: 900px) {
 
     /*************MENU*************/
 
@@ -1886,6 +1887,14 @@ hr {
 
 
     /*************quienes somos*************/
+
+    .contact-form {
+        width: 75%;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
     .nosotros {
         display: flex;
@@ -1963,6 +1972,11 @@ hr {
     }
 
     /****************** TRABAJOS *******************/
+
+    .trabajos {
+        margin-bottom: 20%;
+    }
+
     .trabajos h1 {
         font-size: 200%;
     }
@@ -2363,6 +2377,7 @@ hr {
         padding-left: 50px;
         text-wrap: wrap;
     }
+
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
         width: 17px;
