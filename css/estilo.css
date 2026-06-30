@@ -12,6 +12,10 @@ section {
     scroll-margin-top: var(--nav-height);
 }
 
+.esquina {
+    display: none;
+}
+
 hr {
     border: none;
     height: 1px;
@@ -47,12 +51,12 @@ hr {
     text-underline-offset: 4px;
 }
 
-.nowrap{
+.nowrap {
     text-wrap: wrap;
 }
 
-.margin-top{
-    margin-bottom: 180px;
+.margin-top {
+    margin-bottom: 186px;
 }
 
 .home {
@@ -102,7 +106,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding: .5rem ;
+    padding: .5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -184,24 +188,24 @@ hr {
 
 /* Cards estadisticas */
 
-.cards-section{
+.cards-section {
     margin: 5% 10%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.card-simple{
+.card-simple {
     padding: 20px;
     text-align: center;
 }
 
-.card-number{
+.card-number {
     font-size: 3rem;
     color: #F18A19;
 }
 
-.card-text{
+.card-text {
     font-size: 1rem;
     font-weight: bold;
 }
@@ -1015,6 +1019,7 @@ hr {
     outline: none;
     box-shadow: none;
 }
+
 .input-text::placeholder {
     color: #888;
     opacity: 1;
@@ -1039,11 +1044,11 @@ hr {
     border-color: rgba(240, 125, 0, 1);
 }
 
-.button{
+.button {
     background-color: #f59c35;
 }
 
-.button:hover{
+.button:hover {
     background-color: #f07d00;
 }
 
@@ -1054,26 +1059,26 @@ hr {
     height: 30vh;
 }
 
-.inline-datos{
+.inline-datos {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.contact-form{
+.contact-form {
     width: 70%;
     color: gray;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
 
 .contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 10%;
-    padding: 50px;
+    justify-content: center;
+    gap: 7%;
+    padding: 40px 80px;
 }
 
 .contact-mails {
@@ -1122,6 +1127,7 @@ hr {
 
 .footer {
     background-color: #F18A19;
+    width: 100%;
     padding: 20px;
     color: #ffe699;
     display: flex;
@@ -1129,7 +1135,11 @@ hr {
 }
 
 .footer-img {
-    padding-left: 40px;
+    padding-left: 160px;
+
+    img {
+        border-radius: 50%;
+    }
 }
 
 .footer-info {
@@ -1145,7 +1155,7 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-left: 35%;
+    padding-left: 25%;
 }
 
 .logo-img {
@@ -1541,151 +1551,23 @@ hr {
 
 /**** MASTER ***/
 
-@media all and (max-width:2560px) {
-
-    /*************MENU*************/
-    .menu1 {
-        height: 54px;
-    }
-
-    /*************quienes somos*************/
-    .quienesSomos {
-        width: 60%;
-        margin-top: 2%;
-        margin-bottom: 35px;
-    }
-
-    /************ SERVICIOS *******************/
-    .servicio {}
-
-    .servicioC {
-        height: 400px;
-    }
-
-    .servicioCC {}
-
-    .servicioC h2 {
-        font-size: 2.5em;
-    }
-
-    .servicioP {
-        top: -120px;
-    }
-
-    .servicioPF {
-        top: 110px;
-    }
-
-    .servicioPF h2 {
-        font-size: 2.5em;
-    }
-
-    /****************** TRABAJOS *******************/
-    .trabajos h1 {
-        font-size: 400%;
-        font-weight: 700;
-    }
-
-    .t1I {
-        font-size: 1.5em;
-    }
-
-    .t2I {
-        font-size: 1.5em;
-    }
-
-    .t3I {
-        font-size: 1.5em;
-    }
-
-    .t4I {
-        font-size: 1.5em;
-    }
-
-    .t5I {
-        font-size: 1.5em;
-    }
-
-    .t6I {
-        font-size: 1.5em;
-    }
-
-    .t7I {
-        font-size: 1.5em;
-    }
-
-    .t8I {
-        font-size: 1.5em;
-    }
-
-    .t9I {
-        font-size: 1.5em;
-    }
-
-    /***************** CONTACTO ***********************/
-    .titulo h2 {
-        font-size: 2.3em;
-    }
-
-    .titulo h5 {
-        font-size: 1.6em;
-    }
-
-    /***************** SLIDER ************************/
-    .slider22 input[type="radio"]+label {
-        width: 30px;
-        height: 30px;
-        top: -80px;
-    }
-
-    .revealinfo h2 {
-        font-size: 2.9em;
-    }
-
-    .revealinfo p {
-        font-size: 1.7em;
-    }
-
-    .fuera {
-        display: inline;
-        right: 10px;
-        top: 8px;
-    }
-
-    .fuera span {
-        font-size: 2em;
-    }
-
-    .fueraMenor {
-        display: none;
-    }
-}
-
 @media all and (max-width:1440px) {
 
     /*************MENU*************/
-    .menu1 {
-        height: 50px;
+
+    .nav-header {
+        margin-left: 180px;
     }
 
     /*************quienes somos*************/
-    .quienesSomos {
-        width: 90%;
-        margin-top: 70px;
-        padding-top: 70px;
-        margin-bottom: 15px;
-    }
 
     /************ INTERMEDIO *******************/
 
     /************ SERVICIOS *******************/
-    .servicio {}
 
     .servicioC {
         height: 300px;
     }
-
-    .servicioCC {}
 
     .servicioC h2 {
         font-size: 1.7em;
@@ -1709,6 +1591,7 @@ hr {
 
     .servicioPF p {
         font-size: 1.1em;
+        padding-right: 40px;
     }
 
     /****************** TRABAJOS *******************/
@@ -1759,12 +1642,16 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
-    .titulo h2 {
-        font-size: 2.3em;
+
+    .nosotros {
+        padding: 40px;
     }
 
-    .titulo h5 {
-        font-size: 1.6em;
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        padding: 40px 95px;
     }
 
     /***************** SLIDER ************************/
@@ -1800,24 +1687,80 @@ hr {
     }
 }
 
-@media all and (max-width:1024px) {
+@media all and (max-width:1280px) {
 
     /*************MENU*************/
-    .menu1 {
-        height: 50px;
+    .nav-header {
+        margin-left: 150px;
     }
 
     /*************quienes somos*************/
-    .quienesSomos {
-        width: 100%;
-    }
 
     /************ INTERMEDIO *******************/
-    .servicio {}
+    .footer-img {
+        padding-left: 143px;
+    }
 
-    .servicioC {}
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        padding: 40px 300px;
+    }
 
-    .servicioCC {}
+    /************ SERVICIOS *******************/
+
+    .servicioC {
+        height: 300px;
+    }
+
+    .servicioC h2 {
+        font-size: 1.7em;
+    }
+
+    .servicioC p {
+        font-size: 1.1em;
+    }
+
+    .servicioP {
+        top: -105px;
+    }
+
+    .servicioPF {
+        top: 110px;
+    }
+
+    .servicioPF h2 {
+        font-size: 1.7em;
+    }
+
+    .servicioPF p {
+        font-size: 1.1em;
+        padding-right: 40px;
+    }
+
+}
+
+@media all and (max-width:1024px) {
+
+    /*************MENU*************/
+    .nav-header {
+        margin-left: 125px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 55%;
+    }
+
+
+    /*************quienes somos*************/
+
+
+    /************ INTERMEDIO *******************/
 
     .servicioC h2 {
         font-size: 1.6em;
@@ -1889,19 +1832,31 @@ hr {
         margin-bottom: 25%;
     }
 
+
     /***************** CONTACTO ***********************/
-    .titulo h2 {
-        font-size: 1.7em;
-    }
-
-    .titulo h5 {
-        font-size: 1.1em;
-    }
-
     .contact-container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .nosotros-info {
+        padding-left: 29%;
+        text-wrap: wrap;
+    }
+
+    .footer-img {
+        padding-left: 150px;
+    }
+
+    .contact-mails {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+        border-left: solid 1px #ffb27b;
+        padding-bottom: 30px;
     }
 
     /***************** SLIDER ************************/
@@ -1921,44 +1876,77 @@ hr {
     }
 }
 
-@media all and (max-width:812px) {
+@media all and (max-width: 900px) {
 
     /*************MENU*************/
-    .menu1 a {
-        font-size: 0.8em;
+
+    .nav-header {
+        margin-left: 98px;
     }
 
-    .icon-menu {
-        font-size: 1.8em;
-    }
-
-    .icon-cross {
-        font-size: 1.4em;
-    }
 
     /*************quienes somos*************/
 
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50%;
+        padding: 20px;
+    }
+
+    .nosotros>article {
+        padding-left: 12%;
+        padding-right: 5%;
+        text-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .nosotros-info {
+        padding-left: 0%;
+        padding-right: 5%;
+        text-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+
+    .nosotros-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+
+        img {
+            transform: scale(0.9) rotate(0);
+            width: 100%;
+        }
+    }
+
+    .nosotros-img img {
+        padding: 5%;
+    }
+
     /************ INTERMEDIO *******************/
+
+    .cards-section {
+        margin: 5% 13%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
 
     /************ SERVICIOS *******************/
     .servicio {
         height: 100vh;
     }
 
-    .servicioC {}
-
-    .servicioCC {}
-
-    .servicioC h2 {
+    .servicioCC h2 {
         font-size: 1.2em;
     }
 
-    .servicioC p {
-        font-size: 0.6em;
-    }
-
-    .servicioP {
-        top: -150px;
+    .servicioCC p {
+        font-size: 1em;
     }
 
     .servicioPF {
@@ -1971,7 +1959,7 @@ hr {
     }
 
     .servicioPF p {
-        font-size: 0.6em;
+        font-size: 1em;
     }
 
     /****************** TRABAJOS *******************/
@@ -2027,8 +2015,13 @@ hr {
     .contact-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
+        justify-content: flex-start;
+        gap: 60px;
+        padding-left: 125px;
+    }
+
+    .footer-img {
+        padding-left: 80px;
     }
 
     /***************** SLIDER ************************/
@@ -2060,34 +2053,61 @@ hr {
 @media all and (max-width:640px) {
 
     /*************MENU*************/
+
+    .nav-container.scrolled .nav-links-mobile {
+        background: rgba(241, 138, 25, 0.75);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .nav-header {
+        margin-left: 66px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .esquina {
+        display: flex;
+    }
+
     .esquina .icon-menu {
-        font-size: 1.5em;
+        position: relative;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 10%;
+        top: 10px;
+        display: inline;
+        font-size: 2.2em;
+        text-align: center;
     }
 
     .esquina .icon-cross {
-        font-size: 1em;
+        position: relative;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 10%;
+        top: 10px;
+        display: inline;
+        font-size: 2.2em;
+        text-align: center;
     }
 
-    .menu1 {
-        margin-top: -180px;
-        height: 180px;
-    }
-
-    .menu1 li {
+    .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 56px;
+        right: 0;
         width: 100%;
-        float: none;
-        list-style-type: none;
-    }
-
-    .menu1 a {
-        padding: 10px 12px;
-        text-decoration: none;
-        font-size: 0.6em;
-    }
-
-    .subhome img {
-        width: 100%;
-        align-content: center;
+        background-color: #f07d00;
+        z-index: 9999;
     }
 
     /*************quienes somos*************/
@@ -2117,6 +2137,16 @@ hr {
     }
 
     /************ SERVICIOS *******************/
+
+    .servicio {
+        position: relative;
+        /* height: 100%; */
+        margin: 10%;
+        padding-left: 15px;
+        margin-top: 7%;
+        margin-bottom: 30%;
+    }
+
     .servicioC {
 
         width: 100%;
@@ -2135,7 +2165,7 @@ hr {
     }
 
     .servicioCF {
-        width: 93%;
+        width: 80%;
     }
 
     .servicioP {
@@ -2157,7 +2187,7 @@ hr {
     }
 
     .servicioPP {
-        width: 93%;
+        width: 80%;
 
     }
 
@@ -2167,28 +2197,40 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
-    .datos {
-        width: 100%;
+
+    .nosotros-info {
+        padding-left: 14%;
+        padding-right: 5%;
+        text-wrap: wrap;
+        margin-bottom: 40px;
     }
 
-    .enviar {
-        margin-top: 20%;
+    .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
-    .enviarB {
-        font-size: 1em;
+    .contact-mails {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+        border-left: solid 1px #ffb27b;
+        padding-bottom: 30px;
+        width: 300px;
     }
 
-    .enviarB:hover {
-        font-size: 1em;
+    .footer-img {
+        padding-left: 40px;
     }
 
-    .enviarB:focus {
-        font-size: 1em;
+    .footer-pc {
+        padding-left: 110px;
     }
 
     /***************** SLIDER ************************/
-    .reveal1 {}
 
     .revealFotos {
         height: 50vh;
@@ -2241,46 +2283,40 @@ hr {
     }
 }
 
-@media all and (max-width:375px) {
+@media all and (max-width:400px) {
 
     /*************MENU*************/
 
+    .nav-header {
+        margin-left: 30px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     /*************quienes somos*************/
-    .quienesSomos h1 {
-        font-size: 1.6em;
-    }
-
-    .primerP {
-        font-size: 100%;
-    }
-
-    .primerP {
-        padding: 10px;
-    }
-
-    .segundoP {
-        padding: 10px;
-    }
 
     /************ INTERMEDIO *******************/
+
+    .cards-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     /************ SERVICIOS *******************/
     .servicio {
         height: 550px;
     }
 
-    .servicioC {}
-
-    .servicioCC {}
-
-    .servicioC h2 {}
-
-    .servicioC p {}
-
-    .servicioCF {}
-
     .servicioP {
-        top: -20px;
+        top: 60px;
     }
 
     .servicioPF {
@@ -2288,19 +2324,45 @@ hr {
         width: 80%;
     }
 
-    .servicioPF h2 {}
-
-    .servicioPF p {}
-
-    .servicioPP {}
-
     /****************** TRABAJOS *******************/
+
+    .trabajos {
+        margin-top: 210px;
+    }
+
     .trabajos h1 {
         font-size: 150%;
     }
 
     /***************** CONTACTO ***********************/
 
+    .contact-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-mails {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: solid 1px #ffb27b;
+        padding-bottom: 30px;
+        width: 300px;
+    }
+
+    .footer-img {
+        padding-left: 10px;
+    }
+
+    .footer-pc {
+        padding-left: 50px;
+        text-wrap: wrap;
+    }
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
         width: 17px;

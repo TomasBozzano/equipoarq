@@ -44,11 +44,13 @@ var velocidadMenuLi = 12;
 }    
 var saleX = function(){
     document.getElementById('menuM').style.display="inline";
+    document.getElementById('nav-links-mobile').style.display="none";
     document.getElementById('menuX').style.display="none";
     correArriba();
 };   
 var saleM = function(){
     document.getElementById('menuM').style.display="none";
+    document.getElementById('nav-links-mobile').style.display="flex";
     document.getElementById('menuX').style.display="inline";
     disparar();
 };
