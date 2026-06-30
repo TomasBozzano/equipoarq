@@ -1,0 +1,85 @@
+/*//////////////////////  HOME ////////////////*/
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow :hidden;
+    height: 100vh;
+    
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow:hidden;
+
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    margin:  0;
+    width: 400%; 
+    animation: cambio 5s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+   
+}
+.slider img{
+    width: 100%;   
+  
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%}
+    20% {margin-left: 0%}
+    
+    25%{margin-left: -100%}
+    45%{margin-left: -100%}
+    
+    50%{margin-left: -200%}
+    70%{margin-left: -200%}
+    
+    75%{margin-left: -300%}
+    95%{margin-left: -300%}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+   <section class="home"> 
+
+.orbit-slider img{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100vh;
+    
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}

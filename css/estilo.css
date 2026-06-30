@@ -1,0 +1,2395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --nav-height: 70px;
+}
+
+section {
+    scroll-margin-top: var(--nav-height);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(241, 138, 25, 0.5);
+    width: 60%;
+    margin: 40px auto;
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url("fuente/Champagne & Limousines.ttf");
+}
+
+@font-face {
+    font-family: "Champagne & Limousines Bold";
+    src: url("fuente/Champagne & Limousines Bold.ttf");
+}
+
+.orange-title {
+    color: #F18A19;
+    font-size: 3rem;
+}
+
+.orange {
+    color: #F18A19;
+    font-weight: bold;
+}
+
+.text-underline {
+    text-decoration: underline;
+    text-decoration-color: #F18A19;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.nowrap{
+    text-wrap: wrap;
+}
+
+.margin-top{
+    margin-bottom: 180px;
+}
+
+.home {
+    position: relative;
+    background-image: url(../img/home_imgcc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.subhome {
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subhome img {
+    width: 30%;
+    align-content: center;
+}
+
+.home .columns {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/****************** MENU ****************/
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: .5rem ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #F18A19;
+    transition: all 0.3s ease;
+}
+
+.nav-container.scrolled {
+    background: rgba(241, 138, 25, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header {
+    margin-left: 170px;
+}
+
+.nav-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 45%;
+}
+
+.nav-link {
+    padding: 10px;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    color: rgba(112, 110, 111, 1);
+}
+
+.nav-link.active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+}
+
+/******************QUIENES SOMOS****************/
+
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 40px;
+}
+
+.nosotros-info {
+    padding-left: 25%;
+    text-wrap: wrap;
+}
+
+.nosotros-info>h1 {
+    font-size: 2rem;
+}
+
+.nosotros-img>img {
+    padding-right: 15%;
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+/* Cards estadisticas */
+
+.cards-section{
+    margin: 5% 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card-simple{
+    padding: 20px;
+    text-align: center;
+}
+
+.card-number{
+    font-size: 3rem;
+    color: #F18A19;
+}
+
+.card-text{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/********************Intermedio*/
+
+.intermedio {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    background-image: url(../img/back_proyectocc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.subPrueba {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.subPrueba img {
+    width: 100%;
+    height: 300px;
+    align-content: center;
+}
+
+/******************SERVICIO********************/
+.servicio {
+    position: relative;
+    height: 100%;
+    margin: 3%;
+    padding-left: 15px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.servicioC {
+    position: relative;
+    height: 100%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+.servicioCC {
+    top: 0%;
+    position: relative;
+    width: 35%;
+    left: 10%;
+}
+
+.servicioC h2 {
+    color: #f07d00;
+    font-family: "Champagne & Limousines", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.servicioC p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.servicioCF {
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 43%;
+    height: 0;
+    position: relative;
+    left: -10%;
+}
+
+.servicioP {
+    top: 10px;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin: 2%;
+}
+
+.servicioPF {
+    top: 80px;
+    position: relative;
+    width: 35%;
+}
+
+.servicioPF h2 {
+    color: #f07d00;
+    font-family: "Champagne & Limousines", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.servicioPF p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.servicioPP {
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 43%;
+    height: 0;
+    position: relative;
+    left: 10%;
+}
+
+.servicioPF img {
+    width: 50%;
+}
+
+/** galeria **/
+
+#galeria {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 22.5em;
+    list-style: none;
+    overflow: hidden;
+}
+
+#galeria li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#galeria li img {
+    width: 100%;
+}
+
+#galeria .selected {
+    height: 22.5em;
+    z-index: 1;
+    -moz-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+
+#galeria .noselected {
+    height: 0;
+    z-index: auto;
+    -moz-transition: all 0s ease 1s;
+    -webkit-transition: all 0s ease 1s;
+    -o-transition: all 0s ease 1s;
+    -ms-transition: all 0s ease 1s;
+    transition: all 0s ease 1s;
+}
+
+/** galeria **/
+/** galeria1 **/
+
+#galeria1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 22.5em;
+    list-style: none;
+    overflow: hidden;
+}
+
+#galeria1 li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#galeria1 li img {
+    width: 100%;
+}
+
+#galeria1 .selected1 {
+    height: 22.5em;
+    z-index: 10;
+    -moz-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+
+#galeria1 .noselected1 {
+    height: 0;
+    z-index: auto;
+    -moz-transition: all 0s ease 1s;
+    -webkit-transition: all 0s ease 1s;
+    -o-transition: all 0s ease 1s;
+    -ms-transition: all 0s ease 1s;
+    transition: all 0s ease 1s;
+}
+
+/** galeria **/
+
+.dibujaLinea {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+/********************Trabajos*/
+.trabajos {
+    position: relative;
+    width: 73%;
+    height: 100%;
+    background-color: white;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding: 0px;
+    padding-bottom: 3%
+}
+
+.trabajos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+}
+
+.trabajos h1 {
+    color: #f07d00;
+    font-family: "Champagne & Limousines", sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin: 30px;
+}
+
+.trabajoPrimera {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 250px;
+}
+
+.t1 {
+    position: relative;
+    background: url(../img/obras/dd/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.t2 {
+    position: relative;
+    background: url(../img/obras/elida/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    width: 100%;
+}
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5,
+.t6,
+.t7,
+.t8 {
+    box-shadow: 4px 10px 10px #b3530040;
+}
+
+/*--------------------Hover de cada trabajo --------------*/
+.t1I {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.t1:hover .t1I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 249px;
+}
+
+.t2I {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t2:hover .t2I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 249px;
+}
+
+.contieneTrabajoSegunda {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 103%;
+    left: -1.5%;
+}
+
+.trabajoSegunda {
+    position: relative;
+    min-height: 300px;
+}
+
+.t3 {
+    position: relative;
+    background: url(../img/obras/institucional/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t3I {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t3:hover .t3I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.t4 {
+    position: relative;
+    background: url(../img/obras/mac-oub/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t4I {
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t4:hover .t4I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.t5 {
+    background: url(../img/obras/pay/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t5I {
+    position: relative;
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t5:hover .t5I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.contieneTrabajoTercera {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.trabajoTercera {
+    height: 210px;
+}
+
+.t6 {
+    background: url(../img/obras/ulises/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t6I {
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t6:hover .t6I {
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    min-height: 300px;
+}
+
+.t7 {
+    background: url(../img/obras/v10/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t7I {
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t7:hover .t7I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.t8 {
+    background: url(../img/obras/vf/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+.t8I {
+    color: white;
+    background-color: rgba(238, 154, 18, 0.8);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t8:hover .t8I {
+    margin: 0px;
+    padding: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+/*--------------------Hover de cada trabajo --------------*/
+
+
+/*--------------------Animacion de cada trabajo --------------*/
+.anima1 {
+    -webkit-animation: aparece1 0.8s;
+    animation: aparece1 0.8s;
+}
+
+.anima2 {
+    -webkit-animation: aparece2 1.1;
+    animation: aparece2 1.1s;
+}
+
+.anima3 {
+    -webkit-animation: aparece3 1.4s;
+    animation: aparece3 1.4s;
+}
+
+.anima4 {
+    -webkit-animation: aparece4 1.7s;
+    animation: aparece4 1.7s;
+}
+
+.anima5 {
+    -webkit-animation: aparece5 2s;
+    animation: aparece5 2s;
+}
+
+.anima6 {
+    -webkit-animation: aparece6 2.3s;
+    animation: aparece6 2.3s;
+}
+
+.anima7 {
+    -webkit-animation: aparece7 2.5s;
+    animation: aparece7 2.5s;
+}
+
+.anima8 {
+    -webkit-animation: aparece8 2.8s;
+    animation: aparece8 2.8s;
+}
+
+.anima9 {
+    -webkit-animation: aparece9 3.1s;
+    animation: aparece9 3.1s;
+}
+
+.anima10 {
+    -webkit-animation: aparece10 3.4s;
+    animation: aparece10 3.4s;
+}
+
+@-webkit-keyframes aparece1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece4 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece5 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece6 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece7 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece8 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece9 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece10 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/************* CONTACTO *******************/
+.contacto {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(240, 125, 0, 0.9);
+    padding-bottom: 3%;
+}
+
+.titulo {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.titulo h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+    font-family: "Champagne & Limousines Bold";
+}
+
+.titulo h5 {
+    margin: 0;
+    padding: 0;
+    font-family: "Champagne & Limousines Bold";
+}
+
+.datos {
+    width: 50%;
+    height: 100%;
+    margin-top: 4%;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.datos h6 {
+    font-family: "Champagne & Limousines";
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.datos h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.datos>a {
+    color: #FFEB3B;
+}
+
+.datos>a:hover,
+.datos>h3>a:focus {
+    color: #ffe699;
+}
+
+.enviar {
+    margin-top: 3%;
+    color: white;
+}
+
+.enviar h3 {
+    font-family: "Champagne & Limousines Bold";
+    text-align: center;
+}
+
+.input-text {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    border-bottom: 2px solid #F18A19;
+
+    outline: none;
+    box-shadow: none;
+
+    padding: 6px 2px;
+    font-family: "Champagne & Limousines";
+}
+
+.input-text:focus {
+    border: none;
+    border-bottom: 2px solid #F07D00;
+    outline: none;
+    box-shadow: none;
+}
+.input-text::placeholder {
+    color: #888;
+    opacity: 1;
+    font-style: italic;
+}
+
+.mensajeM {
+    font-family: "Champagne & Limousines";
+    background-color: rgba(240, 125, 0, 0);
+    border-color: rgba(240, 125, 0, 0);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(240, 125, 0, 1);
+    height: 25vh;
+}
+
+.mensajeM::placeholder {
+    color: gray;
+}
+
+.mensajeM:focus {
+    box-shadow: 0px 0px 0px rgba(240, 125, 0, 1);
+    border-color: rgba(240, 125, 0, 1);
+}
+
+.button{
+    background-color: #f59c35;
+}
+
+.button:hover{
+    background-color: #f07d00;
+}
+
+
+.zocalo {
+    width: 100%;
+    height: 30vh;
+    height: 30vh;
+}
+
+.inline-datos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-form{
+    width: 70%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    padding: 50px;
+}
+
+.contact-mails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    border-left: solid 1px #ffb27b;
+    padding-bottom: 30px;
+
+}
+
+.contact-mails h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    white-space: nowrap
+}
+
+.contact-mails>.contact-data>a {
+    color: #FFEB3B;
+}
+
+.contact-mails>a:hover,
+.contact-mails>h3>a:focus {
+    color: #ffe699;
+}
+
+.contact-data {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    gap: 8px;
+}
+
+.contact-mails h3 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.contact-data a {
+    line-height: 1;
+}
+
+.footer {
+    background-color: #F18A19;
+    padding: 20px;
+    color: #ffe699;
+    display: flex;
+    border-top: solid 1px #ffe699;
+}
+
+.footer-img {
+    padding-left: 40px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-pc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 35%;
+}
+
+.logo-img {
+    width: 20px;
+    height: 20px;
+}
+
+.icons-img {
+    width: 20px;
+    height: 20px;
+}
+
+/******************* Reveal +++++++++++++*/
+
+.reveal1 {
+    z-index: 999999999999999999999999999999999999999999999;
+    position: fixed;
+    top: 0.5%;
+    bottom: 0.5%;
+    left: 0.5%;
+    right: 0.5%;
+    height: 98%;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid #f07d00;
+    display: none;
+}
+
+.slider22 {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 10px;
+}
+
+.slider22 img {
+    position: absolute;
+    margin: 0;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83vh;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.fuera {
+    z-index: 999999999999999999999999999;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    top: 8px;
+    background: white;
+    width: 35px;
+    height: 40px;
+}
+
+.fuera span {
+    color: dimgray;
+    font-size: 1em;
+}
+
+.fueraMenor {
+    z-index: 999999999999999999999999999;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    top: 8px;
+    background: white;
+    width: 35px;
+    height: 40px;
+}
+
+.fueraMenor span {
+    color: dimgray;
+    font-size: 1em;
+}
+
+.revealFotos {
+    position: relative;
+    padding: 3%;
+    height: 100%;
+}
+
+.revealinfo {
+    position: relative;
+    padding: 3%;
+    height: 100%;
+}
+
+.revealinfo h2 {
+    font-family: "Champagne & Limousines Bold";
+    color: rgba(240, 125, 0, 1);
+}
+
+.revealinfo p {
+    font-family: "Champagne & Limousines Bold";
+    color: dimgray;
+}
+
+.reveal1-11 {
+    background-image: url(../img/obras/dd/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal1-22 {
+    background: url(../img/obras/dd/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal1-33 {
+    background: url(../img/obras/dd/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal1-44 {
+    background: url(../img/obras/dd/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal2-11 {
+    background-image: url(../img/obras/elida/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal2-22 {
+    background: url(../img/obras/elida/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal2-33 {
+    background: url(../img/obras/elida/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal2-44 {
+    background: url(../img/obras/elida/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal3-11 {
+    background-image: url(../img/obras/institucional/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal3-22 {
+    background: url(../img/obras/institucional/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal3-33 {
+    background: url(../img/obras/institucional/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal3-44 {
+    background: url(../img/obras/institucional/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal3-55 {
+    background: url(../img/obras/institucional/05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal4-11 {
+    background-image: url(../img/obras/mac-oub/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal4-22 {
+    background: url(../img/obras/mac-oub/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal5-11 {
+    background-image: url(../img/obras/pay/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal5-22 {
+    background: url(../img/obras/pay/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-11 {
+    background-image: url(../img/obras/ulises/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-22 {
+    background: url(../img/obras/ulises/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-33 {
+    background: url(../img/obras/ulises/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-44 {
+    background: url(../img/obras/ulises/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-55 {
+    background: url(../img/obras/ulises/05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal6-66 {
+    background: url(../img/obras/ulises/06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal7-11 {
+    background-image: url(../img/obras/v10/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal7-22 {
+    background: url(../img/obras/v10/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal7-33 {
+    background: url(../img/obras/v10/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal7-44 {
+    background: url(../img/obras/v10/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal7-55 {
+    background: url(../img/obras/v10/05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-11 {
+    background-image: url(../img/obras/vf/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-22 {
+    background: url(../img/obras/vf/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-33 {
+    background: url(../img/obras/vf/03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-44 {
+    background: url(../img/obras/vf/04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-55 {
+    background: url(../img/obras/vf/05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-66 {
+    background: url(../img/obras/vf/06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-77 {
+    background: url(../img/obras/vf/07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal8-88 {
+    background: url(../img/obras/vf/08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*///////////////////////////////////Reveal///*/
+
+/*///////////////////////////////////Slider///*/
+
+.slider22 input[type="radio"] {
+    display: none;
+}
+
+.slider22 input[type="radio"]:checked~img {
+    opacity: 1;
+}
+
+.slider22 input[type="radio"]+label {
+    position: relative;
+    z-index: 50;
+    top: -80px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+}
+
+.slider22 input[type="radio"]:checked+label {
+    background: #f07d00;
+
+}
+
+
+/**** MASTER ***/
+
+@media all and (max-width:2560px) {
+
+    /*************MENU*************/
+    .menu1 {
+        height: 54px;
+    }
+
+    /*************quienes somos*************/
+    .quienesSomos {
+        width: 60%;
+        margin-top: 2%;
+        margin-bottom: 35px;
+    }
+
+    /************ SERVICIOS *******************/
+    .servicio {}
+
+    .servicioC {
+        height: 400px;
+    }
+
+    .servicioCC {}
+
+    .servicioC h2 {
+        font-size: 2.5em;
+    }
+
+    .servicioP {
+        top: -120px;
+    }
+
+    .servicioPF {
+        top: 110px;
+    }
+
+    .servicioPF h2 {
+        font-size: 2.5em;
+    }
+
+    /****************** TRABAJOS *******************/
+    .trabajos h1 {
+        font-size: 400%;
+        font-weight: 700;
+    }
+
+    .t1I {
+        font-size: 1.5em;
+    }
+
+    .t2I {
+        font-size: 1.5em;
+    }
+
+    .t3I {
+        font-size: 1.5em;
+    }
+
+    .t4I {
+        font-size: 1.5em;
+    }
+
+    .t5I {
+        font-size: 1.5em;
+    }
+
+    .t6I {
+        font-size: 1.5em;
+    }
+
+    .t7I {
+        font-size: 1.5em;
+    }
+
+    .t8I {
+        font-size: 1.5em;
+    }
+
+    .t9I {
+        font-size: 1.5em;
+    }
+
+    /***************** CONTACTO ***********************/
+    .titulo h2 {
+        font-size: 2.3em;
+    }
+
+    .titulo h5 {
+        font-size: 1.6em;
+    }
+
+    /***************** SLIDER ************************/
+    .slider22 input[type="radio"]+label {
+        width: 30px;
+        height: 30px;
+        top: -80px;
+    }
+
+    .revealinfo h2 {
+        font-size: 2.9em;
+    }
+
+    .revealinfo p {
+        font-size: 1.7em;
+    }
+
+    .fuera {
+        display: inline;
+        right: 10px;
+        top: 8px;
+    }
+
+    .fuera span {
+        font-size: 2em;
+    }
+
+    .fueraMenor {
+        display: none;
+    }
+}
+
+@media all and (max-width:1440px) {
+
+    /*************MENU*************/
+    .menu1 {
+        height: 50px;
+    }
+
+    /*************quienes somos*************/
+    .quienesSomos {
+        width: 90%;
+        margin-top: 70px;
+        padding-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    /************ INTERMEDIO *******************/
+
+    /************ SERVICIOS *******************/
+    .servicio {}
+
+    .servicioC {
+        height: 300px;
+    }
+
+    .servicioCC {}
+
+    .servicioC h2 {
+        font-size: 1.7em;
+    }
+
+    .servicioC p {
+        font-size: 1.1em;
+    }
+
+    .servicioP {
+        top: -105px;
+    }
+
+    .servicioPF {
+        top: 110px;
+    }
+
+    .servicioPF h2 {
+        font-size: 1.7em;
+    }
+
+    .servicioPF p {
+        font-size: 1.1em;
+    }
+
+    /****************** TRABAJOS *******************/
+    .trabajos h1 {
+        font-size: 300%;
+    }
+
+    .t1I {
+        font-size: 1em;
+    }
+
+    .t2I {
+        font-size: 1em;
+    }
+
+    .t3I {
+        font-size: 1em;
+    }
+
+    .t4I {
+        font-size: 1em;
+
+    }
+
+    .t5I {
+        font-size: 1em;
+
+    }
+
+    .t6I {
+        font-size: 1em;
+
+    }
+
+    .t7I {
+        font-size: 1em;
+
+    }
+
+    .t8I {
+        font-size: 1em;
+
+    }
+
+    .t9I {
+        font-size: 1em;
+
+    }
+
+    /***************** CONTACTO ***********************/
+    .titulo h2 {
+        font-size: 2.3em;
+    }
+
+    .titulo h5 {
+        font-size: 1.6em;
+    }
+
+    /***************** SLIDER ************************/
+    .slider22 input[type="radio"]+label {
+        width: 20px;
+        height: 20px;
+        top: -80px;
+    }
+
+    .revealinfo h2 {
+        font-size: 2.9em;
+    }
+
+    .revealinfo p {
+        font-size: 1.7em;
+    }
+
+    .revealinfo h2 {
+        font-size: 2em;
+    }
+
+    .revealinfo p {
+        font-size: 1em;
+    }
+
+    .fuera {
+        right: 0px;
+        top: 8px;
+    }
+
+    .fuera span {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width:1024px) {
+
+    /*************MENU*************/
+    .menu1 {
+        height: 50px;
+    }
+
+    /*************quienes somos*************/
+    .quienesSomos {
+        width: 100%;
+    }
+
+    /************ INTERMEDIO *******************/
+    .servicio {}
+
+    .servicioC {}
+
+    .servicioCC {}
+
+    .servicioC h2 {
+        font-size: 1.6em;
+    }
+
+    .servicioC p {
+        font-size: 0.7em;
+    }
+
+    .servicioP {
+        top: -120px;
+    }
+
+    .servicioPF {
+        top: 50px;
+    }
+
+    .servicioPF h2 {
+        font-size: 1.6em;
+    }
+
+    .servicioPF p {
+        font-size: 0.7em;
+    }
+
+    /****************** TRABAJOS *******************/
+    .t1I {
+        font-size: 0.8em;
+    }
+
+    .t2I {
+        font-size: 0.8em;
+    }
+
+    .t3I {
+        font-size: 0.8em;
+    }
+
+    .t4I {
+        font-size: 0.8em;
+
+    }
+
+    .t5I {
+        font-size: 0.8em;
+
+    }
+
+    .t6I {
+        font-size: 0.8em;
+
+    }
+
+    .t7I {
+        font-size: 0.8em;
+
+    }
+
+    .t8I {
+        font-size: 0.8em;
+
+    }
+
+    .t9I {
+        font-size: 0.8em;
+    }
+
+    .trabajos {
+        margin-bottom: 25%;
+    }
+
+    /***************** CONTACTO ***********************/
+    .titulo h2 {
+        font-size: 1.7em;
+    }
+
+    .titulo h5 {
+        font-size: 1.1em;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /***************** SLIDER ************************/
+    .slider22 input[type="radio"]+label {
+        width: 20px;
+        height: 20px;
+        top: -110px;
+    }
+
+    .fuera {
+        right: 0px;
+        top: 8px;
+    }
+
+    .fuera span {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width:812px) {
+
+    /*************MENU*************/
+    .menu1 a {
+        font-size: 0.8em;
+    }
+
+    .icon-menu {
+        font-size: 1.8em;
+    }
+
+    .icon-cross {
+        font-size: 1.4em;
+    }
+
+    /*************quienes somos*************/
+
+    /************ INTERMEDIO *******************/
+
+    /************ SERVICIOS *******************/
+    .servicio {
+        height: 100vh;
+    }
+
+    .servicioC {}
+
+    .servicioCC {}
+
+    .servicioC h2 {
+        font-size: 1.2em;
+    }
+
+    .servicioC p {
+        font-size: 0.6em;
+    }
+
+    .servicioP {
+        top: -150px;
+    }
+
+    .servicioPF {
+        top: 20px;
+        width: 38%;
+    }
+
+    .servicioPF h2 {
+        font-size: 1.2em;
+    }
+
+    .servicioPF p {
+        font-size: 0.6em;
+    }
+
+    /****************** TRABAJOS *******************/
+    .trabajos h1 {
+        font-size: 200%;
+    }
+
+    .t1I {
+        font-size: 1em;
+    }
+
+    .t2I {
+        font-size: 1em;
+    }
+
+    .t3I {
+        font-size: 1em;
+    }
+
+    .t4I {
+        font-size: 1em;
+    }
+
+    .t5I {
+        font-size: 1em;
+    }
+
+    .t6I {
+        font-size: 1em;
+    }
+
+    .t7I {
+        font-size: 1em;
+    }
+
+    .t8I {
+        font-size: 1em;
+    }
+
+    .t9I {
+        font-size: 1em;
+    }
+
+    /***************** CONTACTO ***********************/
+    .titulo h2 {
+        font-size: 1.4em;
+    }
+
+    .titulo h5 {
+        font-size: 0.8em;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /***************** SLIDER ************************/
+    .revealinfo h2 {
+        font-size: 1.5em;
+    }
+
+    .revealinfo p {
+        font-size: 0.7em;
+    }
+
+    .slider22 input[type="radio"]+label {
+        width: 20px;
+        height: 20px;
+        top: -110px;
+    }
+
+    .fuera {
+        right: 0px;
+        top: 10px;
+    }
+
+    .fuera span {
+        font-size: 1.2em;
+    }
+
+}
+
+@media all and (max-width:640px) {
+
+    /*************MENU*************/
+    .esquina .icon-menu {
+        font-size: 1.5em;
+    }
+
+    .esquina .icon-cross {
+        font-size: 1em;
+    }
+
+    .menu1 {
+        margin-top: -180px;
+        height: 180px;
+    }
+
+    .menu1 li {
+        width: 100%;
+        float: none;
+        list-style-type: none;
+    }
+
+    .menu1 a {
+        padding: 10px 12px;
+        text-decoration: none;
+        font-size: 0.6em;
+    }
+
+    .subhome img {
+        width: 100%;
+        align-content: center;
+    }
+
+    /*************quienes somos*************/
+    .quienesSomos h1 {
+        font-size: 1.6em;
+    }
+
+    .primerP {
+        font-size: 110%;
+    }
+
+    .primerP {
+        padding: 10px;
+    }
+
+    .segundoP {
+        padding: 10px;
+    }
+
+    /************ INTERMEDIO *******************/
+    .intermedio {
+        height: 100px;
+    }
+
+    .subPrueba img {
+        height: 150px;
+    }
+
+    /************ SERVICIOS *******************/
+    .servicioC {
+
+        width: 100%;
+    }
+
+    .servicioCC {
+        width: 80%;
+    }
+
+    .servicioC h2 {
+        font-size: 1.1em;
+    }
+
+    .servicioC p {
+        font-size: 1em;
+    }
+
+    .servicioCF {
+        width: 93%;
+    }
+
+    .servicioP {
+        top: 7%;
+    }
+
+    .servicioPF {
+        top: 210px;
+        width: 80%;
+
+    }
+
+    .servicioPF h2 {
+        font-size: 1.1em;
+    }
+
+    .servicioPF p {
+        font-size: 1em;
+    }
+
+    .servicioPP {
+        width: 93%;
+
+    }
+
+    /****************** TRABAJOS *******************/
+    .trabajos h1 {
+        font-size: 170%;
+    }
+
+    /***************** CONTACTO ***********************/
+    .datos {
+        width: 100%;
+    }
+
+    .enviar {
+        margin-top: 20%;
+    }
+
+    .enviarB {
+        font-size: 1em;
+    }
+
+    .enviarB:hover {
+        font-size: 1em;
+    }
+
+    .enviarB:focus {
+        font-size: 1em;
+    }
+
+    /***************** SLIDER ************************/
+    .reveal1 {}
+
+    .revealFotos {
+        height: 50vh;
+        margin-bottom: 20px;
+    }
+
+    .revealinfo {
+        height: 50%;
+    }
+
+    .slider22 img {
+        height: 50vh;
+    }
+
+    .fuera {
+        font-size: 1.1em;
+    }
+
+    .slider22 input[type="radio"]+label {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+    }
+
+    /************** Reveal *******************/
+    .reveal1 {
+        overflow-y: scroll;
+    }
+
+    .fuera {
+        display: none;
+
+    }
+
+    .fuera span {
+        font-size: 1em;
+    }
+
+    .fueraMenor {
+        display: inline;
+        padding: 1px;
+        right: 12px;
+        top: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .fueraMenor span {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width:375px) {
+
+    /*************MENU*************/
+
+    /*************quienes somos*************/
+    .quienesSomos h1 {
+        font-size: 1.6em;
+    }
+
+    .primerP {
+        font-size: 100%;
+    }
+
+    .primerP {
+        padding: 10px;
+    }
+
+    .segundoP {
+        padding: 10px;
+    }
+
+    /************ INTERMEDIO *******************/
+
+    /************ SERVICIOS *******************/
+    .servicio {
+        height: 550px;
+    }
+
+    .servicioC {}
+
+    .servicioCC {}
+
+    .servicioC h2 {}
+
+    .servicioC p {}
+
+    .servicioCF {}
+
+    .servicioP {
+        top: -20px;
+    }
+
+    .servicioPF {
+        top: 180px;
+        width: 80%;
+    }
+
+    .servicioPF h2 {}
+
+    .servicioPF p {}
+
+    .servicioPP {}
+
+    /****************** TRABAJOS *******************/
+    .trabajos h1 {
+        font-size: 150%;
+    }
+
+    /***************** CONTACTO ***********************/
+
+    /***************** SLIDER ************************/
+    .slider22 input[type="radio"]+label {
+        width: 17px;
+        height: 17px;
+        top: 20px;
+    }
+
+    .fueraMenor {
+        right: 11px;
+    }
+}
+
+@media all and (max-width:320px) {
+
+    /*************MENU*************/
+
+    /*************quienes somos*************/
+
+    /************ INTERMEDIO *******************/
+
+    /************ SERVICIOS *******************/
+    .servicio {
+        height: 500px;
+    }
+
+    .servicioC {}
+
+    .servicioCC {}
+
+    .servicioC h2 {}
+
+    .servicioC p {}
+
+    .servicioCF {}
+
+    .servicioP {
+        top: -55px;
+    }
+
+    .servicioPF {
+        top: 150px;
+        width: 80%;
+    }
+
+    .servicioPF h2 {}
+
+    .servicioPF p {}
+
+    .servicioPP {}
+
+    /****************** TRABAJOS *******************/
+    .t3I {
+        font-size: 0.35em;
+    }
+
+    .t4I {
+        font-size: 0.35em;
+    }
+
+    .t5I {
+        font-size: 0.35em;
+    }
+
+    .t6I {
+        font-size: 0.35em;
+    }
+
+    .t7I {
+        font-size: 0.35em;
+    }
+
+    .t8I {
+        font-size: 0.35em;
+    }
+
+    .t9I {
+        font-size: 0.35em;
+    }
+
+    /***************** CONTACTO ***********************/
+
+    /***************** SLIDER ************************/
+    .slider22 input[type="radio"]+label {
+        width: 15px;
+        height: 15px;
+        top: 15px;
+    }
+
+    .fueraMenor {
+        right: 10px;
+    }
+}
