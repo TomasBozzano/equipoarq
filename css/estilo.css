@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -78,7 +78,7 @@ hr {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     padding: 10px 0;
 }
 
@@ -349,11 +349,9 @@ hr {
 /** galeria **/
 
 .dibujaLinea {
+    width: 90%;
     position: relative;
-    height: auto;
-    width: 100%;
-    padding-left: 20px;
-
+    margin: 0 auto;
 }
 
 /********************Trabajos*/
@@ -410,19 +408,20 @@ hr {
     gap: 5px;
 }
 
-.contieneTrabajoSegunda, .contieneTrabajoTercera {
+.contieneTrabajoSegunda,
+.contieneTrabajoTercera {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.contieneTrabajoTercera{
+.contieneTrabajoTercera {
     margin-left: 45px;
 }
 
 .trabajoPrimera,
 .trabajoSegunda,
 .trabajoTercera {
-  margin: 0;
+    margin: 0;
 }
 
 .trabajoPrimera {
@@ -1505,10 +1504,31 @@ hr {
 
     /****************** TRABAJOS *******************/
 
+    .dibujaLinea {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+    }
+
     .trabajos {
         width: min(80%, 600px);
         margin: 0 auto;
+    }
 
+    .contieneTrabajoPrimera,
+    .contieneTrabajoSegunda,
+    .contieneTrabajoTercera {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contieneTrabajoTercera {
+        margin-left: 0;
+    }
+
+    .gridTrabajos a {
+        width: 100%;
+        margin: 0;
     }
 
     .t1I {
@@ -1885,12 +1905,12 @@ hr {
     /****************** TRABAJOS *******************/
 
     .trabajos {
-        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 600px;
     }
 
     .t3I {
