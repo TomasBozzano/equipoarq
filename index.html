@@ -322,11 +322,13 @@
                 </p>
                 <h3>Contactanos</h3>
                 <p class="contacto-social">
-                    <a class="logo-link-social" href="https://instagram.com/equipoarq">
+                    <a class="logo-link-social" href="https://instagram.com/equipoarq" target="_blank"
+                        rel="noopener noreferrer">
                         <img class="logo-img" src="./img/icons/instagram-icon.svg"
                             alt="Imagen de instagram acerca del perfil de EquipoArq">
                     </a>
-                    <a class="logo-link-social" href="https://facebook.com/equipoarq">
+                    <a class="logo-link-social" href="https://www.facebook.com/EArq.Arquitectura" target="_blank"
+                        rel="noopener noreferrer">
                         <img class="logo-img" src="./img/icons/facebook-icon.svg"
                             alt="Imagen de facebook acerca del perfil de equipoArq">
                     </a>
@@ -334,15 +336,17 @@
             </header>
             <form action="enviar.php" method="post" class="contact-form">
                 <div class="inline-datos">
-                    <input class="input-text" type="text" name="nombre" placeholder="Nombre" required>
-                    <input class="input-text" type="text" name="telefono" placeholder="Telefono" required>
+                    <input class="input-text" type="text" name="nombre" placeholder="Nombre *" required>
+                    <input class="input-text" type="tel" name="telefono" placeholder="Teléfono *" inputmode="tel"
+                        oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')"
+                        pattern="[0-9+\-\s()]{6,20}" title="Ingrese un teléfono válido." required>
                 </div>
-                <input class="input-text" type="mail" name="correo" placeholder="Correo" required>
+                <input class="input-text" type="email" name="correo" placeholder="Correo *" required>
                 <select class="input-text" name="select-city" id="select-city" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="eliangelini@gmail.com.ar">Gualeguaychú</option>
-                    <option value="cata@gmail.com.ar">CABA</option>
-                    <option value="evenani@gmail.com.ar">Junín, BS AS</option>
+                    <option value="">Seleccione una opción *</option>
+                    <option value="eliangelini@gmail.com">Gualeguaychú</option>
+                    <option value="cristianwcata@gmail.com">CABA</option>
+                    <option value="equipoarq.estudio@gmail.com">Junín, BS AS</option>
                 </select>
                 <textarea name="mensajeM" class="mensajeM" type="mensaje" placeholder="Dejanos aca tu mensaje"
                     required></textarea>
@@ -360,19 +364,19 @@
                     <h3><strong>GUALEGUAYCHU (E.R.)</strong></h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de ubicación">
+                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
                     <h3>Arq. Eliana Angelini.</h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de ubicación">
-                    <a href="https://wa.me/549344615605061" target="_blank" rel="noopener noreferrer">
+                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
+                    <a href="https://wa.me/543446605061" target="_blank" rel="noopener noreferrer">
                         <h3>+54 9 3446 (15) 605061</h3>
                     </a>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de ubicación">
-                    <a href="mailto:eliangelini@gmail.com.ar" target="_blank" rel="noopener noreferrer">
-                        <h3>eliangelini@equipoarq.com.ar</h3>
+                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                    <a href="mailto:eliangelini@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <h3>eliangelini@gmail.com</h3>
                     </a>
                 </div>
             </article>
@@ -382,19 +386,19 @@
                     <h3><strong>CABA (Bs. As.)</strong></h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de ubicación">
+                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
                     <h3>Arq. Cristian Catalán </h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de ubicación">
-                    <a href="https://wa.me/5491164203984" target="_blank" rel="noopener noreferrer">
+                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de Whatsapp">
+                    <a href="https://wa.me/5491164203984?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">
                         <h3>+54 9 11 (15) 64203984</h3>
                     </a>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de ubicación">
-                    <a href="mailto:cata@equipoarq.com.ar" target="_blank" rel="noopener noreferrer">
-                        <h3>cata@equipoarq.com.ar</h3>
+                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                    <a href="mailto:cristianwcata@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <h3>cristianwcata@gmail.com</h3>
                     </a>
                 </div>
             </article>
@@ -404,19 +408,19 @@
                     <h3><strong>JUNIN (Bs. As.)</strong></h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de ubicación">
+                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
                     <h3>Arq. Evelyn Nani.</h3>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de ubicación">
-                    <a href="https://wa.me/5491164359950" target="_blank" rel="noopener noreferrer">
+                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
+                    <a href="https://wa.me/5491164359950?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">
                         <h3>+54 9 11 (15) 64359950</h3>
                     </a>
                 </div>
                 <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de ubicación">
-                    <a href="mailto:evenani@gmail.com.ar" target="_blank" rel="noopener noreferrer">
-                        <h3>evenani@equipoarq.com.ar</h3>
+                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                    <a href="mailto:equipoarq.estudio@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <h3>equipoarq.estudio@gmail.com</h3>
                     </a>
                 </div>
             </article>
