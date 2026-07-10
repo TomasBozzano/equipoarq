@@ -8,8 +8,3 @@
     mail($destino,"Contacto", $contenido);
     header("Location:gracias.html");
 ?>
-
-               
-                
-                
-            

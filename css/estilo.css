@@ -357,7 +357,7 @@ hr {
 /********************Trabajos*/
 .trabajos {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: white;
     margin-top: 7%;
@@ -1874,7 +1874,12 @@ hr {
     /****************** TRABAJOS *******************/
 
     .trabajos {
-        margin-top: 210px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 600px;
     }
 
     .trabajos h1 {
