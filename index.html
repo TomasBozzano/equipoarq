@@ -336,7 +336,7 @@
             </header>
             <form action="enviar.php" method="post" class="contact-form">
                 <div class="inline-datos">
-                    <input class="input-text" type="text" name="nombre" placeholder="Nombre *" required>
+                    <input class="input-text" type="text" name="nombre" placeholder="Nombre *" minlength="3" maxlength="50" required>
                     <input class="input-text" type="tel" name="telefono" placeholder="Teléfono *" inputmode="tel"
                         oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')"
                         pattern="[0-9+\-\s()]{6,20}" title="Ingrese un teléfono válido." required>
@@ -348,7 +348,7 @@
                     <option value="cristianwcata@gmail.com">CABA</option>
                     <option value="equipoarq.estudio@gmail.com">Junín, BS AS</option>
                 </select>
-                <textarea name="mensajeM" class="mensajeM" type="mensaje" placeholder="Dejanos aca tu mensaje"
+                <textarea name="mensajeM" class="mensajeM" type="mensaje" placeholder="Dejanos aca tu mensaje" minlength="5" maxlength="200"
                     required></textarea>
                 <button id="boton" class="button">Enviar</button>
             </form>
@@ -365,7 +365,7 @@
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3>Arq. Eliana Angelini.</h3>
+                    <h3><strong>Arq. </strong>Eliana Angelini.</h3>
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
@@ -387,7 +387,7 @@
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3>Arq. Cristian Catalán </h3>
+                    <h3><strong>Arq. </strong>Cristian Catalán.</h3>
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de Whatsapp">
@@ -409,7 +409,7 @@
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3>Arq. Evelyn Nani.</h3>
+                    <h3><strong>Arq. </strong>Evelyn Nani. y <strong>Mmo.</strong> Mili Ojeda.</h3>
                 </div>
                 <div class="footer-data">
                     <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
