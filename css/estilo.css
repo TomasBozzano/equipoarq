@@ -1001,6 +1001,14 @@ hr {
     white-space: nowrap
 }
 
+.footer-h3-display{
+    display: block;
+}
+
+.footer-h3-mobile{
+    display: none;
+}
+
 .footer-mails>.footer-data>a {
     color: #FFEB3B;
 }
@@ -1887,6 +1895,16 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
+
+    .footer-h3-display{
+        display: none;
+    }
+
+
+    .footer-h3-mobile{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     /***************** SLIDER ************************/
