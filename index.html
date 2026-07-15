@@ -8,8 +8,10 @@
     <meta name="msapplication-TileColor" content="#ffffff00">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff00">
-    <meta name="description" content="En EquipoArq transformamos tus ideas en proyectos de arquitectura. Diseñamos espacios únicos y te acompañamos para hacer realidad el sueño de construir.">
-    <meta name="keywords" content="arquitectura, diseño, construcción, planos, Junín, Gualeguaychu, Buenos Aires, proyectos, equipoarq">
+    <meta name="description"
+        content="En EquipoArq transformamos tus ideas en proyectos de arquitectura. Diseñamos espacios únicos y te acompañamos para hacer realidad el sueño de construir.">
+    <meta name="keywords"
+        content="arquitectura, diseño, construcción, planos, Junín, Gualeguaychu, Buenos Aires, proyectos, equipoarq">
     <title>EquipoArq</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/img-mobile/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/img-mobile/apple-icon-60x60.png">
@@ -30,7 +32,8 @@
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family= Playfair + Display " rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +41,7 @@
 
     <header id="header-nav" class="header-nav">
         <div class="nav-container">
-            <a class="nav-header" href="#1">
+            <a class="nav-header" data-link-home="1" href="#1">
                 <h1 id="logo-link" class="logo">
                     <img class="logo-img" src="./img/img-mobile/apple-icon-120x120.png"
                         alt="Imagen del logo de EquipoArq">
@@ -46,10 +49,10 @@
                 </h1>
             </a>
             <nav class="nav-links">
-                <a class="nav-link" href="#2">Nosotros</a>
-                <a class="nav-link" href="#3">Servicios</a>
-                <a class="nav-link" href="#4">Trabajos</a>
-                <a class="nav-link" href="#5">Contacto</a>
+                <a class="nav-link" data-link="2" href="#2">Nosotros</a>
+                <a class="nav-link" data-link="3" href="#3">Servicios</a>
+                <a class="nav-link" data-link="4" href="#4">Trabajos</a>
+                <a class="nav-link" data-link="5" href="#5">Contacto</a>
             </nav>
 
             <div id="esquina" class="esquina">
@@ -69,7 +72,7 @@
         <!-------------------------------- HOME -------------->
         <section class="home" id="1">
             <div class="subhome">
-                <img src="img/logo.png" alt="Imagen del logo de EquipoArq">
+                <img src="img/fuente/MARCA_de_AGUA.png" alt="Imagen del logo de EquipoArq">
             </div>
         </section>
 
@@ -78,19 +81,19 @@
             <article class="nosotros-info">
                 <h1>Bienvenidos a <span class="orange-title">equipoArq</span></h1>
                 <p class="nosotros-first">Somos un estudio de
-                    <span class="text-underline">
+                    <strong class="text-underline">
                         arquitectura y construcción
-                    </span> dedicado al
+                    </strong> dedicado al
                     <span class="orange">
                         diseño, planificación y ejecución de proyectos
                     </span>. Acompañamos cada obra desde la idea inicial hasta su finalización,
-                    <span class="text-underline">
+                    <strong class="text-underline">
                         ofreciendo soluciones funcionales, estéticas y adaptadas
-                    </span>
+                    </strong>
                     a las necesidades de cada cliente.
                 </p>
                 <p class="nosotros-second">
-                    En <span class="orange">EquipoArq</span> trabajamos como aliados estratégicos de cada cliente,
+                    En <strong class="orange">EquipoArq</strong> trabajamos como aliados estratégicos de cada cliente,
                     brindando
                     asesoramiento profesional y
                     soluciones que transforman ideas en proyectos concretos.
@@ -112,7 +115,7 @@
 
         <!----------------------------- Cards -->
 
-        <section class="cards-section">
+        <section class="cards-section" id="7">
             <article class="card-simple">
                 <p class="card-number">50+</p>
                 <p class="card-text">Proyectos realizados</p>
@@ -135,8 +138,8 @@
                 <div class="servicioCC" id="cuboC">
                     <h2>Servicio para Clientes</h2>
                     <p>
-                        Transformamos tus ideas en proyectos que combinan <span class="text-underline">diseño,
-                            funcionalidad y calidad</span>. Te
+                        Transformamos tus ideas en proyectos que combinan <strong class="text-underline">diseño,
+                            funcionalidad y calidad</strong>. Te
                         acompañamos en cada etapa del proceso, brindando asesoramiento profesional para que
                         construir sea una experiencia segura y sin preocupaciones.
                     </p>
@@ -166,7 +169,8 @@
                 <div class="servicioCC" id="cuboPF">
                     <h2>Servicio para Profesionales</h2>
                     <p> Creemos en el trabajo colaborativo como base de los grandes proyectos. Acompañamos a nuestros
-                        colegas aportando <span class="text-underline">experiencia, herramientas y soluciones</span> que
+                        colegas aportando <strong class="text-underline">experiencia, herramientas y soluciones</strong>
+                        que
                         optimizan cada etapa del proceso,
                         garantizando resultados de calidad y una ejecución eficiente. </p>
                 </div>
@@ -179,7 +183,7 @@
         <section class="trabajos" id="4">
             <header class="dibujaLinea">
                 <img class="" src="img/paisaje.jpg" alt="Imagen de paisaje de Gualeguaychu, Entre Rios">
-                <h1>Trabajos ejecutados</h1>
+                <h2>Trabajos ejecutados</h2>
             </header>
             <div class="gridTrabajos">
 
@@ -304,131 +308,142 @@
 
         </section>
 
-        <hr class="orange">
         <!--------------------------- CONTACTO ------------------>
 
-        <section class="contacto" id="5">
-            <header class="contacto-info">
-                <h4 class="">
+        <hr class="orange">
+
+        <section id="5">
+            <div class="contacto">
+                <header class="contacto-info">
+                    <h4 class="">
                         Tu próximo proyecto comienza con <span class="orange-title">equipoArq</span>
                     </h4>
-                <p>
-                    Contanos qué necesitás y nos comunicaremos con vos para brindarte el asesoramiento adecuado. Ya sea
-                    una obra nueva, una remodelación o una consulta, <span class="text-underline">estamos listos para
-                        acompañarte en cada etapa.</span>
-                </p>
-                <h3>Contactanos</h3>
-                <p class="contacto-social">
-                    <a class="logo-link-social" href="https://instagram.com/equipoarq" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="logo-img" src="./img/icons/instagram-icon.svg"
-                            alt="Imagen de instagram acerca del perfil de EquipoArq">
-                    </a>
-                    <a class="logo-link-social" href="https://www.facebook.com/EArq.Arquitectura" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="logo-img" src="./img/icons/facebook-icon.svg"
-                            alt="Imagen de facebook acerca del perfil de equipoArq">
-                    </a>
-                </p>
-            </header>
-            <form action="enviar.php" method="post" class="contact-form">
-                <div class="inline-datos">
-                    <input class="input-text" type="text" name="nombre" placeholder="Nombre *" minlength="3" maxlength="50" required>
-                    <input class="input-text" type="tel" name="telefono" placeholder="Teléfono *" inputmode="tel"
-                        oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')"
-                        pattern="[0-9+\-\s()]{6,20}" title="Ingrese un teléfono válido." required>
-                </div>
-                <input class="input-text" type="email" name="correo" placeholder="Correo *" required>
-                <select class="input-text" name="select-city" id="select-city" required>
-                    <option value="">Seleccione una opción *</option>
-                    <option value="eliangelini@gmail.com">Gualeguaychú</option>
-                    <option value="cristianwcata@gmail.com">CABA</option>
-                    <option value="equipoarq.estudio@gmail.com">Junín, BS AS</option>
-                </select>
-                <textarea name="mensajeM" class="mensajeM" type="mensaje" placeholder="Dejanos aca tu mensaje" minlength="5" maxlength="200"
-                    required></textarea>
-                <button id="boton" class="button">Enviar</button>
-            </form>
+                    <p>
+                        Contanos qué necesitás y nos comunicaremos con vos para brindarte el asesoramiento adecuado. Ya
+                        sea
+                        una obra nueva, una remodelación o una consulta, <strong class="text-underline">estamos listos
+                            para
+                            acompañarte en cada etapa.</strong>
+                    </p>
+                    <h4>Contactanos</h4>
+                    <p class="contacto-social">
+                        <a class="logo-link-social" href="https://instagram.com/equipoarq" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="logo-img" src="./img/icons/instagram-icon.svg"
+                                alt="Imagen de instagram acerca del perfil de EquipoArq">
+                        </a>
+                        <a class="logo-link-social" href="https://www.facebook.com/EArq.Arquitectura" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="logo-img" src="./img/icons/facebook-icon.svg"
+                                alt="Imagen de facebook acerca del perfil de equipoArq">
+                        </a>
+                    </p>
+                </header>
+                <form action="enviar.php" method="post" class="contact-form">
+                    <div class="inline-datos">
+                        <input class="input-text" type="text" name="nombre" placeholder="Nombre *" minlength="3"
+                            maxlength="50" required>
+                        <input class="input-text" type="tel" name="telefono" placeholder="Teléfono *" inputmode="tel"
+                            oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')" pattern="[0-9+\-\s()]{6,20}"
+                            title="Ingrese un teléfono válido." required>
+                    </div>
+                    <input class="input-text" type="email" name="correo" placeholder="Correo *" required>
+                    <select class="input-text" name="select-city" id="select-city" required>
+                        <option value="">Seleccione una opción *</option>
+                        <option value="eliangelini@gmail.com">Gualeguaychú</option>
+                        <option value="cristianwcata@gmail.com">CABA</option>
+                        <option value="equipoarq.estudio@gmail.com">Junín, BS AS</option>
+                    </select>
+                    <textarea name="mensajeM" class="mensajeM" type="mensaje" placeholder="Dejanos aca tu mensaje"
+                        minlength="5" maxlength="200" required></textarea>
+                    <button id="boton" class="button">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <article class="contact-mails">
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
+                        <h3><strong>GUALEGUAYCHU (E.R.)</strong></h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
+                        <h3><strong>Arq. </strong>Eliana Angelini. (<strong>CEO</strong>)</h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
+                        <a href="https://wa.me/543446605061" target="_blank" rel="noopener noreferrer">
+                            <h3>+54 9 3446 (15) 605061</h3>
+                        </a>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                        <a href="mailto:eliangelini@gmail.com">
+                            <h3>eliangelini@gmail.com</h3>
+                        </a>
+                    </div>
+                </article>
+                <article class="contact-mails">
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
+                        <h3><strong>CABA - GBA (Bs. As.)</strong></h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
+                        <h3><strong>Arq. </strong>Cristian Catalán. (<strong>CEO</strong>)</h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de Whatsapp">
+                        <a href="https://wa.me/5491164203984?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios."
+                            target="_blank" rel="noopener noreferrer">
+                            <h3>+54 9 11 (15) 64203984</h3>
+                        </a>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                        <a href="mailto:cristianwcata@gmail.com">
+                            <h3>cristianwcata@gmail.com</h3>
+                        </a>
+                    </div>
+                </article>
+                <article class="contact-mails">
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
+                        <h3><strong>JUNIN (Bs. As.)</strong></h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
+                        <h3 class="contact-h3-display"><strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>) y
+                            <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)
+                        </h3>
+                        <h3 class="contact-h3-mobile">
+                            <div>
+                                <strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>)
+                            </div>
+                            <div>
+                                <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)
+                        </h3>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
+                        <a href="https://wa.me/5491164359950?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios."
+                            target="_blank" rel="noopener noreferrer">
+                            <h3>+54 9 11 (15) 64359950</h3>
+                        </a>
+                    </div>
+                    <div class="contact-data">
+                        <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
+                        <a href="mailto:equipoarq.estudio@gmail.com">
+                            <h3>equipoarq.estudio@gmail.com</h3>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
         </section>
     </main>
 
     <!-----------------------------FOOTER -------------------->
     <footer class="footer">
-        <section class="footer-info" id="6">
-            <article class="footer-mails">
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
-                    <h3><strong>GUALEGUAYCHU (E.R.)</strong></h3>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3><strong>Arq. </strong>Eliana Angelini. (<strong>CEO</strong>)</h3>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
-                    <a href="https://wa.me/543446605061" target="_blank" rel="noopener noreferrer">
-                        <h3>+54 9 3446 (15) 605061</h3>
-                    </a>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
-                    <a href="mailto:eliangelini@gmail.com">
-                        <h3>eliangelini@gmail.com</h3>
-                    </a>
-                </div>
-            </article>
-            <article class="footer-mails">
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
-                    <h3><strong>CABA (Bs. As.) - GBA</strong></h3>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3><strong>Arq. </strong>Cristian Catalán. (<strong>CEO</strong>)</h3>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de Whatsapp">
-                    <a href="https://wa.me/5491164203984?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">
-                        <h3>+54 9 11 (15) 64203984</h3>
-                    </a>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
-                    <a href="mailto:cristianwcata@gmail.com">
-                        <h3>cristianwcata@gmail.com</h3>
-                    </a>
-                </div>
-            </article>
-            <article class="footer-mails">
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/location.svg" alt="icono de ubicación">
-                    <h3><strong>JUNIN (Bs. As.)</strong></h3>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
-                    <h3 class="footer-h3-display"><strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>) y <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)</h3>
-                    <h3 class="footer-h3-mobile">
-                        <div>
-                            <strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>) 
-                        </div>
-                        <div>
-                            <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)</h3>
-                        </div>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/whatsapp.svg" alt="icono de whatsapp">
-                    <a href="https://wa.me/5491164359950?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">
-                        <h3>+54 9 11 (15) 64359950</h3>
-                    </a>
-                </div>
-                <div class="footer-data">
-                    <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
-                    <a href="mailto:equipoarq.estudio@gmail.com">
-                        <h3>equipoarq.estudio@gmail.com</h3>
-                    </a>
-                </div>
-            </article>
-        </section>
         <small class="copyright">
             &copy; 2026 - Todos los derechos reservados - EquipoArq
         </small>
