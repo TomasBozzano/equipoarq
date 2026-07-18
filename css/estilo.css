@@ -989,6 +989,7 @@ hr {
 
 .input-text:focus {
     border: none;
+    background: transparent;
     border-bottom: 2px solid #F07D00;
     outline: none;
     box-shadow: none;
