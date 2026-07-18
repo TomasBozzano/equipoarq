@@ -9,22 +9,11 @@
 :root {
     --nav-height: 70px;
 
-    --font-family: "Poppins","Champagne & Limousines", sans-serif;
-    --font-family-bold: "Poppins","Champagne & Limousines Bold", sans-serif;
+    --font-family: "Poppins", sans-serif;
+    --font-family-bold: "Poppins", sans-serif;
 
     --background-color: #F5F5F5;
     --background-color2: #F18A19;
-}
-
-
-@font-face {
-    font-family: "Champagne & Limousines";
-    src: url("fuente/Champagne & Limousines.ttf");
-}
-
-@font-face {
-    font-family: "Champagne & Limousines Bold";
-    src: url("fuente/Champagne & Limousines Bold.ttf");
 }
 
 /*** General******************/
@@ -346,7 +335,7 @@ hr {
 }
 
 .servicioCC>h2 {
-    font-family: "Poppins","Champagne & Limousines Bold";
+    font-family: var(--font-family-bold);
     color: #F18A19;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -1221,12 +1210,12 @@ hr {
 }
 
 .revealinfo h2 {
-    font-family: "Champagne & Limousines Bold";
+    font-family: var(--font-family);
     color: rgba(240, 125, 0, 1);
 }
 
 .revealinfo p {
-    font-family: "Champagne & Limousines Bold";
+    font-family: var(--font-family);
     color: dimgray;
 }
 
