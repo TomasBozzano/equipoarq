@@ -174,10 +174,8 @@ hr {
     inset: 0;
 
     background:
-        linear-gradient(
-            rgba(233, 229, 229, 0.25),
-            rgba(208, 205, 205, 0.25)
-        ),
+        linear-gradient(rgba(233, 229, 229, 0.25),
+            rgba(208, 205, 205, 0.25)),
         url("../img/home_imgcc.jpg") center center / cover no-repeat;
 
     filter: blur(4px);
@@ -234,16 +232,18 @@ hr {
     font-weight: 500;
 }
 
-.nosotros-second, .nosotros-third {
+.nosotros-second,
+.nosotros-third {
     font-size: 1rem;
     margin-top: 1rem;
     text-wrap: wrap;
 }
 
-.nosotros-second{
+.nosotros-second {
     font-weight: 400;
 }
-.nosotros-third{
+
+.nosotros-third {
     font-weight: 300;
 }
 
@@ -366,7 +366,7 @@ hr {
     padding: 0;
 
     border-radius: 14px;
-    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
 }
 
 #galeria li,
@@ -391,59 +391,59 @@ hr {
 
 /* Delay Galería Profesionales */
 
-#galeria li:nth-child(1){
-    animation-delay:0s;
+#galeria li:nth-child(1) {
+    animation-delay: 0s;
 }
 
-#galeria li:nth-child(2){
-    animation-delay:4s;
+#galeria li:nth-child(2) {
+    animation-delay: 4s;
 }
 
-#galeria li:nth-child(3){
-    animation-delay:8s;
+#galeria li:nth-child(3) {
+    animation-delay: 8s;
 }
 
 /* Delay Galería Clientes */
 
-#galeria1 li:nth-child(1){
-    animation-delay:0s;
+#galeria1 li:nth-child(1) {
+    animation-delay: 0s;
 }
 
-#galeria1 li:nth-child(2){
-    animation-delay:4s;
+#galeria1 li:nth-child(2) {
+    animation-delay: 4s;
 }
 
-#galeria1 li:nth-child(3){
-    animation-delay:8s;
+#galeria1 li:nth-child(3) {
+    animation-delay: 8s;
 }
 
 /****************** ANIMACIÓN ****************/
 
-@keyframes galleryAnimation{
+@keyframes galleryAnimation {
 
-    0%{
-        opacity:0;
-        transform:scale(1);
+    0% {
+        opacity: 0;
+        transform: scale(1);
     }
 
-    8%{
-        opacity:1;
-        transform:scale(1);
+    8% {
+        opacity: 1;
+        transform: scale(1);
     }
 
-    30%{
-        opacity:1;
-        transform:scale(1.06);
+    30% {
+        opacity: 1;
+        transform: scale(1.06);
     }
 
-    38%{
-        opacity:0;
-        transform:scale(1.10);
+    38% {
+        opacity: 0;
+        transform: scale(1.10);
     }
 
-    100%{
-        opacity:0;
-        transform:scale(1.10);
+    100% {
+        opacity: 0;
+        transform: scale(1.10);
     }
 
 }
@@ -971,13 +971,13 @@ hr {
     gap: 3rem;
 }
 
-.contacto-info>h4{
+.contacto-info>h4 {
     font-family: var(--font-family);
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.contacto-info>p{
+.contacto-info>p {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 300;
@@ -1098,18 +1098,18 @@ hr {
     border-left: 1px solid rgba(241, 138, 25, 0.5);
 }
 
-.contact-mails>div> h3 {
+.contact-mails>div>h3 {
     font-family: var(--font-family);
     font-size: .9rem;
     text-align: left;
     white-space: nowrap
 }
 
-.contact-h3-display{
+.contact-h3-display {
     display: block;
 }
 
-.contact-h3-mobile{
+.contact-h3-mobile {
     display: none;
 }
 
@@ -2003,7 +2003,7 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 600px;
+        margin-top: 700px;
     }
 
     .trabajos h1 {
@@ -2012,12 +2012,12 @@ hr {
 
     /***************** CONTACTO ***********************/
 
-    .contact-h3-display{
+    .contact-h3-display {
         display: none;
     }
 
 
-    .contact-h3-mobile{
+    .contact-h3-mobile {
         display: flex;
         flex-direction: column;
     }
@@ -2049,7 +2049,7 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 600px;
+        margin-top: 700px;
     }
 
     .t3I {
