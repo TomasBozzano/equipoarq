@@ -313,19 +313,22 @@ hr {
 }
 
 /******************SERVICIO********************/
+/****************** SERVICIOS ****************/
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 .servicio-article {
-    font-family: var(--font-family);
-    font-size: 1.2rem;
-    width: 90%;
+    width: min(90%, 1400px);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
-}
-
-.servicioCC-p{
-    font-size: 1rem;
+    gap: 3rem;
 }
 
 .servicioCC,
@@ -334,72 +337,116 @@ hr {
     width: 100%;
 }
 
-.servicioCC>h2 {
+.servicioCC h2 {
     font-family: var(--font-family-bold);
-    color: #F18A19;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--color-primary, #F18A19);
+    margin-bottom: 1.5rem;
 }
 
-/** galeria **/
+.servicioCC-p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text, #444);
+}
+
+
+/****************** GALERÍA ****************/
 
 #galeria,
 #galeria1 {
-    padding-block: 4rem;
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
+
     overflow: hidden;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
 }
 
 #galeria li,
 #galeria1 li {
     position: absolute;
     inset: 0;
+
+    opacity: 0;
+
+    animation: galleryAnimation 12s infinite ease-in-out;
 }
 
 #galeria img,
 #galeria1 img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
+    transition: transform .6s ease;
 }
 
-#galeria .selected {
-    height: 22.5em;
-    z-index: 1;
-    -moz-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
+/* Delay Galería Profesionales */
+
+#galeria li:nth-child(1){
+    animation-delay:0s;
 }
 
-#galeria .noselected,
-#galeria1 .noselected1 {
-    height: 0;
-    z-index: auto;
-    -moz-transition: all 0s ease 1s;
-    -webkit-transition: all 0s ease 1s;
-    -o-transition: all 0s ease 1s;
-    -ms-transition: all 0s ease 1s;
-    transition: all 0s ease 1s;
+#galeria li:nth-child(2){
+    animation-delay:4s;
 }
 
-/** galeria **/
-/** galeria1 **/
-
-#galeria1 .selected1 {
-    height: 22.5em;
-    z-index: 10;
-    -moz-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
+#galeria li:nth-child(3){
+    animation-delay:8s;
 }
 
-/** galeria **/
+/* Delay Galería Clientes */
+
+#galeria1 li:nth-child(1){
+    animation-delay:0s;
+}
+
+#galeria1 li:nth-child(2){
+    animation-delay:4s;
+}
+
+#galeria1 li:nth-child(3){
+    animation-delay:8s;
+}
+
+/****************** ANIMACIÓN ****************/
+
+@keyframes galleryAnimation{
+
+    0%{
+        opacity:0;
+        transform:scale(1);
+    }
+
+    8%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    30%{
+        opacity:1;
+        transform:scale(1.06);
+    }
+
+    38%{
+        opacity:0;
+        transform:scale(1.10);
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(1.10);
+    }
+
+}
 
 .dibujaLinea {
     width: 90%;
