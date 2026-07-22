@@ -1,8 +1,23 @@
+const mobile = document.getElementById("esquina");
 const menuMobile = document.getElementById("nav-links-mobile");
 const menuOpen = document.getElementById("menuM");
 const menuClosed = document.getElementById("menuX");
+const menuItems = document.querySelectorAll(".nav-links-mobile a");
 
-addEventListener("click", () => {
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        menuMobile.style.display = "none";
+        menuOpen.style.display = "block";
+        menuClosed.style.display = "none";
+    })
+});
+
+mobile.addEventListener("click", () => {
+
+    if(mobile.style.display === "none") {
+        return;
+    }
+
     if (menuMobile.style.display === "flex") {
         menuMobile.style.display = "none";
         menuOpen.style.display = "block";
@@ -15,6 +30,8 @@ addEventListener("click", () => {
 });
 
 
+
+
 /******************************************************************Efecto de trabajo**/
 
 var Ta1 = $("#a1").height();
@@ -24,7 +41,7 @@ var div_alto1 = $("#1").height();
 var div_alto2 = $("#2").height();
 var div_alto3 = $("#3").height();
 var div_altoInt = $("#intermedioid").height();
-var div123 =  div_alto3 + div_altoInt + div_alto2 + div_alto1;
+var div123 = div_alto3 + div_altoInt + div_alto2 + div_alto1;
 var medirInferior = window.pageYOffset + window.innerHeight;
 
 if (medirInferior > div123) {

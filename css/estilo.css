@@ -223,6 +223,7 @@ hr {
 .nosotros-info {
     padding: 0;
     font-family: var(--font-family);
+    width: 60%;
 }
 
 .nosotros-first {
@@ -248,12 +249,11 @@ hr {
 }
 
 .nosotros-img img {
-    transform: rotate(5deg) scale(1);
-    transition: transform 0.4s ease;
-}
-
-.nosotros-img img:hover {
-    transform: rotate(0deg) scale(1.03);
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 5%;
 }
 
 /* Cards estadisticas */
@@ -1561,6 +1561,24 @@ hr {
     .contact-info {
         width: min(1200px, 80%);
     }
+
+    .nosotros-info{
+        width: 100%;
+    }
+
+.nosotros-img {
+    width: 100%;
+}
+
+.nosotros-img img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+    object-position: center 30%;
+
+    display: block;
+}
 }
 
 @media all and (max-width:900px) {
@@ -1894,6 +1912,7 @@ hr {
         top: 67px;
         right: 0;
         width: 100%;
+        padding: 20px 0;
         background-color: #f07d00;
         z-index: 9999;
     }
