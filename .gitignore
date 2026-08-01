@@ -1,5 +1,4 @@
 ## Eliminar logger
 .error_log
 
-img/empresa/*
 !img/empresa/.gitkeep
