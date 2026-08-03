@@ -1573,23 +1573,23 @@ hr {
         width: min(1200px, 80%);
     }
 
-    .nosotros-info{
+    .nosotros-info {
         width: 100%;
     }
 
-.nosotros-img {
-    width: 100%;
-}
+    .nosotros-img {
+        width: 100%;
+    }
 
-.nosotros-img img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+    .nosotros-img img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
 
-    object-fit: cover;
-    object-position: center 30%;
+        object-fit: cover;
+        object-position: center 30%;
 
-    display: block;
-}
+        display: block;
+    }
 }
 
 @media all and (max-width:900px) {
@@ -1950,6 +1950,16 @@ hr {
 
     /***************** CONTACTO ***********************/
 
+    .contact-h3-display {
+        display: none;
+    }
+
+
+    .contact-h3-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     /***************** SLIDER ************************/
 
     .revealFotos {
@@ -2040,18 +2050,6 @@ hr {
         font-size: 150%;
     }
 
-    /***************** CONTACTO ***********************/
-
-    .contact-h3-display {
-        display: none;
-    }
-
-
-    .contact-h3-mobile {
-        display: flex;
-        flex-direction: column;
-    }
-
 
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
@@ -2111,6 +2109,11 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
+
+    .contact-info{
+        width: 85%;
+        margin: 0 auto;
+    }
 
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
