@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js" lang="es" dir="ltr">
 
 <head>
     <meta charset="utf-8">
@@ -9,10 +9,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff00">
     <meta name="description"
-        content="En EquipoArq transformamos tus ideas en proyectos de arquitectura. Diseñamos espacios únicos y te acompañamos para hacer realidad el sueño de construir.">
+        content="En equipoArq transformamos tus ideas en proyectos de arquitectura. Diseñamos espacios únicos y te acompañamos para hacer realidad el sueño de construir.">
     <meta name="keywords"
         content="arquitectura, diseño, construcción, planos, Junín, Gualeguaychu, Buenos Aires, proyectos, equipoarq">
-    <title>EquipoArq</title>
+    <title>equipoArq</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/img-mobile/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/img-mobile/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/img-mobile/apple-icon-72x72.png">
@@ -61,10 +61,10 @@
             </div>
 
             <nav class="nav-links-mobile" id="nav-links-mobile" style="display: none;">
-                <a class="nav-link" href="#2">Nosotros</a>
-                <a class="nav-link" href="#3">Servicios</a>
-                <a class="nav-link" href="#4">Trabajos</a>
-                <a class="nav-link" href="#5">Contacto</a>
+                <a data-mobile="2" class="nav-link" href="#2">Nosotros</a>
+                <a data-mobile="3" class="nav-link" href="#3">Servicios</a>
+                <a data-mobile="4" class="nav-link" href="#4">Trabajos</a>
+                <a data-mobile="5" class="nav-link" href="#5">Contacto</a>
             </nav>
         </div>
     </header>
@@ -81,33 +81,35 @@
             <article class="nosotros-info">
                 <h1>Bienvenidos a <span class="orange-title">equipoArq</span></h1>
                 <p class="nosotros-first">Somos un estudio de
-                    <strong class="text-underline">
-                        arquitectura y construcción
-                    </strong> dedicado al
-                    <span class="orange">
-                        diseño, planificación y ejecución de proyectos
-                    </span>. Acompañamos cada obra desde la idea inicial hasta su finalización,
-                    <strong class="text-underline">
-                        ofreciendo soluciones funcionales, estéticas y adaptadas
-                    </strong>
-                    a las necesidades de cada cliente.
+                    <span class="orange">arquitectura</span> con presencia en
+                    <strong class="text-underline">Gualeguaychú (Entre Ríos), CABA/GBA y Junín(Buenos Aires)</strong>.
+                    Esta forma de trabajo nos permite integrar distintas miradas, trabajar de manera
+                    interdisciplinaria y <strong class="text-underline">acompañar</strong> proyectos en cualquier punto.
                 </p>
                 <p class="nosotros-second">
-                    En <strong class="orange">EquipoArq</strong> trabajamos como aliados estratégicos de cada cliente,
-                    brindando
-                    asesoramiento profesional y
-                    soluciones que transforman ideas en proyectos concretos.
+                    Brindamos un <strong>servicio integral </strong> que acompaña que compaña a
+                    <strong>
+                        proyectos, construcciones, dirección y
+                        <strong class="text-underline-black">
+                            administración de obras con contrato separado.
+                        </strong>
+                    </strong>
+                    Tambien desarrollamos diseño de interiores, vidrieras y mobiliario, habilitaciones,
+                    conexiones de servicios, informes técnicos, estudios de inversión y asesoramiento profesional,
+                    <span class="orange">
+                        adaptándonos a las necesidades de cada cliente.
+                    </span>
                 </p>
                 <p class="nosotros-third">
-                    Nuestro enfoque combina diseño, funcionalidad y
-                    compromiso en cada etapa del proceso.
-                    Aspiramos a consolidarnos como un estudio de arquitectura de referencia, reconocido por la calidad
-                    de
-                    nuestros proyectos, la innovación y la responsabilidad con la que abordamos cada obra.
+                    Para nosotros,
+                    <strong class="text-underline-black">la arquitectura es crear espacios pensados para
+                        quienes los habitan, capaces de acompañar
+                        sus experiencias y formar parte de sus historias.
+                    </strong>
                 </p>
             </article>
             <div class="nosotros-img">
-                <img src="img/obras/pay/01.jpg" alt="Imagen de proyecto realizado por nosotros">
+                <img src="img/empresa/foto-empresa.png" alt="Imagen de proyecto realizado por nosotros">
             </div>
         </section>
 
@@ -117,11 +119,13 @@
 
         <section class="cards-section" id="7">
             <article class="card-simple">
-                <p class="card-number">50+</p>
-                <p class="card-text">Proyectos realizados</p>
+                <p class="card-number">+800</p>
+                <p class="card-text">Trabajos realizados</p>
             </article>
             <article class="card-simple">
-                <p class="card-number">5+</p>
+                <p class="card-number">+
+                    <script>document.write(new Date().getFullYear() - 2016);</script>
+                </p>
                 <p class="card-text">Años de experiencia</p>
             </article>
             <article class="card-simple">
@@ -137,11 +141,12 @@
             <article class="servicio-article">
                 <div class="servicioCC" id="cuboC">
                     <h2>Servicio para Clientes</h2>
-                    <p>
-                        Transformamos tus ideas en proyectos que combinan <strong class="text-underline">diseño,
-                            funcionalidad y calidad</strong>. Te
-                        acompañamos en cada etapa del proceso, brindando asesoramiento profesional para que
-                        construir sea una experiencia segura y sin preocupaciones.
+                    <p class="servicioCC-p">
+                        Llevamos a la <strong class="orange">realidad los sueños</strong>, materializando sus
+                        ideas, de forma funcional
+                        y estéticas, <strong class="text-underline">brindando asesoramiento, orientación y
+                            acompañamiento</strong> en cada etapa,
+                        desde el primer boceto hasta la entrega final.
                     </p>
                 </div>
                 <div class="servicioCF" id="cuboCF">
@@ -150,8 +155,6 @@
                             <li><img src="img/sc_1.jpg" border="0" alt="Rascafría1" /></li>
                             <li><img src="img/sc_2.jpg" border="0" alt="Rascafría1" /></li>
                             <li><img src="img/sc_3.jpg" border="0" alt="Rascafría1" /></li>
-                            <!-- <li><img src="img/sc_4.jpg" border="0" alt="Rascafría1" /></li>
-                            <li><img src="img/sc_5.jpg" border="0" alt="Rascafría1" /></li> -->
                         </ul>
                     </div>
                 </div>
@@ -168,11 +171,11 @@
                 </div>
                 <div class="servicioCC" id="cuboPF">
                     <h2>Servicio para Profesionales</h2>
-                    <p> Creemos en el trabajo colaborativo como base de los grandes proyectos. Acompañamos a nuestros
-                        colegas aportando <strong class="text-underline">experiencia, herramientas y soluciones</strong>
-                        que
-                        optimizan cada etapa del proceso,
-                        garantizando resultados de calidad y una ejecución eficiente. </p>
+                    <p class="servicioCC-p">
+                        Ponemos a disposición nuestros <strong class="text-underline">conocimientos, experiencia y
+                            herramientas</strong>
+                        para potenciar sus trabajos. Brindamos apoyo técnico y soluciones que optimizan tiempos.
+                    </p>
                 </div>
             </article>
         </section>
@@ -182,7 +185,7 @@
         <!-------------------------------- TRABAJOS + Hover  ---------->
         <section class="trabajos" id="4">
             <header class="dibujaLinea">
-                <img class="" src="img/paisaje.jpg" alt="Imagen de paisaje de Gualeguaychu, Entre Rios">
+                <img class="" src="img/paisaje3.png" alt="Imagen de paisaje de Gualeguaychu, Entre Rios">
                 <h2>Trabajos ejecutados</h2>
             </header>
             <div class="gridTrabajos">
@@ -319,9 +322,8 @@
                         Tu próximo proyecto comienza con <span class="orange-title">equipoArq</span>
                     </h4>
                     <p>
-                        Contanos qué necesitás y nos comunicaremos con vos para brindarte el asesoramiento adecuado. Ya
-                        sea
-                        una obra nueva, una remodelación o una consulta, <strong class="text-underline">estamos listos
+                        Contanos qué necesitás y nos comunicaremos con vos para brindarte el asesoramiento adecuado.
+                        <strong class="text-underline">Estamos listos
                             para
                             acompañarte en cada etapa.</strong>
                     </p>
@@ -345,7 +347,7 @@
                             maxlength="50" required>
                         <input class="input-text" type="tel" name="telefono" placeholder="Teléfono *" inputmode="tel"
                             oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')" pattern="[0-9+\-\s()]{6,20}"
-                            title="Ingrese un teléfono válido." required>
+                            maxlength="15" title="Ingrese un teléfono válido." required>
                     </div>
                     <input class="input-text" type="email" name="correo" placeholder="Correo *" required>
                     <select class="input-text" name="select-city" id="select-city" required>
@@ -413,14 +415,14 @@
                     <div class="contact-data">
                         <img class="icons-img" src="./img/icons/helmet-safety.svg" alt="icono de arquitecto">
                         <h3 class="contact-h3-display"><strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>) y
-                            <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)
+                            <strong>MMO.</strong> Mili Ojeda. (<strong>COO</strong>)
                         </h3>
                         <h3 class="contact-h3-mobile">
                             <div>
                                 <strong>Arq. </strong>Eve Nani. (<strong>CEO</strong>)
                             </div>
                             <div>
-                                <strong>MMO.</strong> Mili Ojeda. (<strong>Senior</strong>)
+                                <strong>MMO.</strong> Mili Ojeda. (<strong>COO</strong>)
                         </h3>
                     </div>
                     <div class="contact-data">
@@ -433,7 +435,11 @@
                     <div class="contact-data">
                         <img class="icons-img" src="./img/icons/mail.svg" alt="icono de mail">
                         <a href="mailto:equipoarq.estudio@gmail.com">
-                            <h3>equipoarq.estudio@gmail.com</h3>
+                            <h3 class="contact-h3-display">equipoarq.estudio@gmail.com</h3>
+                            <div class="contact-h3-mobile">
+                                <h3>equipoarq.estudio</h3>
+                                <h3>@gmail.com</h3>
+                            </div>
                         </a>
                     </div>
                 </article>
@@ -445,7 +451,8 @@
     <!-----------------------------FOOTER -------------------->
     <footer class="footer">
         <small class="copyright">
-            &copy; 2026 - Todos los derechos reservados - EquipoArq
+            &copy; 2026 - Todos los derechos reservados - <img class="logo-img"
+                src="./img/img-mobile/apple-icon-120x120.png" alt="Imagen del logo de EquipoArq">
         </small>
     </footer>
 
@@ -784,7 +791,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/main1.js"></script>
     <script src="js/nav-scroll.js"></script>
 
 

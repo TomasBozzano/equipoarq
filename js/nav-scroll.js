@@ -13,7 +13,6 @@ window.addEventListener("scroll", () => {
 
     const home = document.querySelector("[data-link-home]");
     const homeSection = document.getElementById(home.dataset.linkHome);
-    console.log(homeSection);
 
     navLinks.forEach(link => {
 

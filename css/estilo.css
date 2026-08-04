@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +7,14 @@
 }
 
 :root {
-    --nav-height: 180px;
+    --nav-height: 70px;
 
-    --font-family: "Champagne & Limousines", sans-serif;
-    --font-family-bold: "Champagne & Limousines Bold", sans-serif;
+    --font-family: "Poppins", sans-serif;
+    --font-family-bold: "Poppins", sans-serif;
 
     --background-color: #F5F5F5;
     --background-color2: #F18A19;
-}
-
-
-@font-face {
-    font-family: "Champagne & Limousines";
-    src: url("fuente/Champagne & Limousines.ttf");
-}
-
-@font-face {
-    font-family: "Champagne & Limousines Bold";
-    src: url("fuente/Champagne & Limousines Bold.ttf");
+    --color-black: #000000;
 }
 
 /*** General******************/
@@ -66,13 +58,25 @@ hr {
 .orange {
     color: #F18A19;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .text-underline {
     text-decoration: underline;
     text-decoration-color: #F18A19;
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
+    font-size: 1rem;
+}
+
+.text-underline-black {
+    color: var(--background-color2);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--color-black);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-size: 1rem;
 }
 
 .nowrap {
@@ -141,7 +145,7 @@ hr {
 .nav-link {
     color: white;
     font-family: var(--font-family-bold);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -181,10 +185,8 @@ hr {
     inset: 0;
 
     background:
-        linear-gradient(
-            rgba(233, 229, 229, 0.25),
-            rgba(208, 205, 205, 0.25)
-        ),
+        linear-gradient(rgba(233, 229, 229, 0.25),
+            rgba(208, 205, 205, 0.25)),
         url("../img/home_imgcc.jpg") center center / cover no-repeat;
 
     filter: blur(4px);
@@ -226,40 +228,50 @@ hr {
 
 .nosotros-info>h1 {
     font-family: var(--font-family-bold);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .nosotros-info {
     padding: 0;
     font-family: var(--font-family);
+    width: 60%;
 }
 
 .nosotros-first {
-    font-size: 1.5rem;
+    font-size: .9rem;
+    margin-top: 1rem;
+    text-wrap: wrap;
+    font-weight: 500;
+}
+
+.nosotros-second,
+.nosotros-third {
+    font-size: .9rem;
     margin-top: 1rem;
     text-wrap: wrap;
 }
 
-.nosotros-second, .nosotros-third {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    text-wrap: wrap;
+.nosotros-second {
+    font-weight: 400;
+}
+
+.nosotros-third {
+    font-weight: 300;
 }
 
 .nosotros-img img {
-    transform: rotate(5deg) scale(1);
-    transition: transform 0.4s ease;
-}
-
-.nosotros-img img:hover {
-    transform: rotate(0deg) scale(1.03);
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 5%;
 }
 
 /* Cards estadisticas */
 
 .cards-section {
-    font-family: var(--font-family-bold);
-    font-size: 2rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
@@ -312,15 +324,22 @@ hr {
 }
 
 /******************SERVICIO********************/
+/****************** SERVICIOS ****************/
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 .servicio-article {
-    font-family: var(--font-family);
-    font-size: 1.4rem;
-    width: 90%;
+    width: min(90%, 1400px);
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .servicioCC,
@@ -329,76 +348,121 @@ hr {
     width: 100%;
 }
 
-.servicioCC>h2 {
-    font-family: "Champagne & Limousines Bold";
-    color: #F18A19;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.servicioCC h2 {
+    font-family: var(--font-family-bold);
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--color-primary, #F18A19);
+    margin-bottom: 1.5rem;
 }
 
-/** galeria **/
+.servicioCC-p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text, #444);
+}
+
+
+/****************** GALERÍA ****************/
 
 #galeria,
 #galeria1 {
-    padding-block: 4rem;
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
+
     overflow: hidden;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
 }
 
 #galeria li,
 #galeria1 li {
     position: absolute;
     inset: 0;
+
+    opacity: 0;
+
+    animation: galleryAnimation 12s infinite ease-in-out;
 }
 
 #galeria img,
 #galeria1 img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
+    transition: transform .6s ease;
 }
 
-#galeria .selected {
-    height: 22.5em;
-    z-index: 1;
-    -moz-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
+/* Delay Galería Profesionales */
+
+#galeria li:nth-child(1) {
+    animation-delay: 0s;
 }
 
-#galeria .noselected,
-#galeria1 .noselected1 {
-    height: 0;
-    z-index: auto;
-    -moz-transition: all 0s ease 1s;
-    -webkit-transition: all 0s ease 1s;
-    -o-transition: all 0s ease 1s;
-    -ms-transition: all 0s ease 1s;
-    transition: all 0s ease 1s;
+#galeria li:nth-child(2) {
+    animation-delay: 4s;
 }
 
-/** galeria **/
-/** galeria1 **/
-
-#galeria1 .selected1 {
-    height: 22.5em;
-    z-index: 10;
-    -moz-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
+#galeria li:nth-child(3) {
+    animation-delay: 8s;
 }
 
-/** galeria **/
+/* Delay Galería Clientes */
+
+#galeria1 li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#galeria1 li:nth-child(2) {
+    animation-delay: 4s;
+}
+
+#galeria1 li:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/****************** ANIMACIÓN ****************/
+
+@keyframes galleryAnimation {
+
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    8% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+
+    38% {
+        opacity: 0;
+        transform: scale(1.10);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.10);
+    }
+
+}
 
 .dibujaLinea {
-    width: 90%;
-    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -423,7 +487,7 @@ hr {
 
 .trabajos h2 {
     color: #f07d00;
-    font-family: var(--font-family-bold);
+    font-family: var(--font-family);
     font-size: 2.5rem;
     text-align: center;
     margin: 30px;
@@ -918,14 +982,16 @@ hr {
     gap: 3rem;
 }
 
-.contacto-info>h4{
-    font-family: var(--font-family-bold);
-    font-size: 2rem;
+.contacto-info>h4 {
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-.contacto-info>p{
+.contacto-info>p {
     font-family: var(--font-family);
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .contacto-social {
@@ -976,11 +1042,13 @@ hr {
     box-shadow: none;
 
     padding: 6px 2px;
-    font-family: "Champagne & Limousines";
+    font-family: var(--font-family);
+    font-size: .9rem;
 }
 
 .input-text:focus {
     border: none;
+    background: transparent;
     border-bottom: 2px solid #F07D00;
     outline: none;
     box-shadow: none;
@@ -993,12 +1061,13 @@ hr {
 }
 
 .mensajeM {
-    font-family: "Champagne & Limousines";
+    font-family: var(--font-family);
     background-color: rgba(240, 125, 0, 0);
     border-color: rgba(240, 125, 0, 0);
     box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
     border-bottom-color: rgba(240, 125, 0, 1);
     height: 10vh;
+    font-size: .9rem;
 }
 
 .mensajeM::placeholder {
@@ -1011,6 +1080,8 @@ hr {
 }
 
 .button {
+    font-family: var(--font-family-bold);
+    font-size: 1rem;
     background-color: #f59c35;
 }
 
@@ -1038,18 +1109,18 @@ hr {
     border-left: 1px solid rgba(241, 138, 25, 0.5);
 }
 
-.contact-mails>div> h3 {
+.contact-mails>div>h3 {
     font-family: var(--font-family);
-    font-size: 1.3rem;
+    font-size: .9rem;
     text-align: left;
     white-space: nowrap
 }
 
-.contact-h3-display{
+.contact-h3-display {
     display: block;
 }
 
-.contact-h3-mobile{
+.contact-h3-mobile {
     display: none;
 }
 
@@ -1089,6 +1160,8 @@ hr {
 
 .footer {
     background-color: var(--background-color2);
+    font-family: var(--font-family);
+    font-size: 1.1rem;
     width: 100%;
     color: #ffe699;
     display: flex;
@@ -1103,6 +1176,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     padding: 20px 0;
 }
 
@@ -1196,12 +1270,12 @@ hr {
 }
 
 .revealinfo h2 {
-    font-family: "Champagne & Limousines Bold";
+    font-family: var(--font-family);
     color: rgba(240, 125, 0, 1);
 }
 
 .revealinfo p {
-    font-family: "Champagne & Limousines Bold";
+    font-family: var(--font-family);
     color: dimgray;
 }
 
@@ -1497,6 +1571,24 @@ hr {
     .servicio-article,
     .contact-info {
         width: min(1200px, 80%);
+    }
+
+    .nosotros-info {
+        width: 100%;
+    }
+
+    .nosotros-img {
+        width: 100%;
+    }
+
+    .nosotros-img img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+
+        object-fit: cover;
+        object-position: center 30%;
+
+        display: block;
     }
 }
 
@@ -1831,6 +1923,7 @@ hr {
         top: 67px;
         right: 0;
         width: 100%;
+        padding: 20px 0;
         background-color: #f07d00;
         z-index: 9999;
     }
@@ -1856,6 +1949,16 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
+
+    .contact-h3-display {
+        display: none;
+    }
+
+
+    .contact-h3-mobile {
+        display: flex;
+        flex-direction: column;
+    }
 
     /***************** SLIDER ************************/
 
@@ -1940,23 +2043,11 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 600px;
+        margin-top: 500px;
     }
 
     .trabajos h1 {
         font-size: 150%;
-    }
-
-    /***************** CONTACTO ***********************/
-
-    .contact-h3-display{
-        display: none;
-    }
-
-
-    .contact-h3-mobile{
-        display: flex;
-        flex-direction: column;
     }
 
 
@@ -1986,7 +2077,7 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 600px;
+        margin-top: 700px;
     }
 
     .t3I {
@@ -2018,6 +2109,11 @@ hr {
     }
 
     /***************** CONTACTO ***********************/
+
+    .contact-info{
+        width: 85%;
+        margin: 0 auto;
+    }
 
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
