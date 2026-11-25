@@ -1124,6 +1124,10 @@ hr {
     display: none;
 }
 
+.contact-h3-mobile-text {
+    display: none;
+}
+
 .contact-mails>.contact-data>a {
     color: var(--background-color2);
 }
@@ -2050,6 +2054,17 @@ hr {
         font-size: 150%;
     }
 
+    /***************** CONTACTO ***********************/
+
+    .contact-h3-display-text {
+        display: none;
+    }
+
+    .contact-h3-mobile-text {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
@@ -2110,7 +2125,7 @@ hr {
 
     /***************** CONTACTO ***********************/
 
-    .contact-info{
+    .contact-info {
         width: 85%;
         margin: 0 auto;
     }
