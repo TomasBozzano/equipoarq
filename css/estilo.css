@@ -2054,17 +2054,6 @@ hr {
         font-size: 150%;
     }
 
-    /***************** CONTACTO ***********************/
-
-    .contact-h3-display-text {
-        display: none;
-    }
-
-    .contact-h3-mobile-text {
-        display: flex;
-        flex-direction: column;
-    }
-
 
     /***************** SLIDER ************************/
     .slider22 input[type="radio"]+label {
@@ -2128,6 +2117,17 @@ hr {
     .contact-info {
         width: 85%;
         margin: 0 auto;
+    }
+
+        /***************** CONTACTO ***********************/
+
+    .contact-h3-display-text {
+        display: none;
+    }
+
+    .contact-h3-mobile-text {
+        display: flex;
+        flex-direction: column;
     }
 
     /***************** SLIDER ************************/
